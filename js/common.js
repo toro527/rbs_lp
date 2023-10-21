@@ -26,34 +26,34 @@ new Vue({
       ],
       cases: [
         {
-          bef: "images/common/bef_1.jpg",
-          aft: "images/common/aft_1.jpg",
+          bef: "/images/common/bef_1.jpg",
+          aft: "/images/common/aft_1.jpg",
         },
         {
-          bef: "images/common/bef_2.jpg",
-          aft: "images/common/aft_2.jpg",
+          bef: "/images/common/bef_2.jpg",
+          aft: "/images/common/aft_2.jpg",
         },
         {
-          bef: "images/common/bef_3.jpg",
-          aft: "images/common/aft_3.jpg",
+          bef: "/images/common/bef_3.jpg",
+          aft: "/images/common/aft_3.jpg",
         },
         {
-          bef: "images/common/bef_4.jpg",
-          aft: "images/common/aft_4.jpg",
+          bef: "/images/common/bef_4.jpg",
+          aft: "/images/common/aft_4.jpg",
         },
         {
-          bef: "images/common/bef_5.jpg",
-          aft: "images/common/aft_5.jpg",
+          bef: "/images/common/bef_5.jpg",
+          aft: "/images/common/aft_5.jpg",
         },
         {
-          bef: "images/common/bef_6.jpg",
-          aft: "images/common/aft_6.jpg",
+          bef: "/images/common/bef_6.jpg",
+          aft: "/images/common/aft_6.jpg",
         },
       ],
       plans: [
         {
           plan: "fenix",
-          img: "images/common/fenix.png",
+          img: "/images/common/fenix.png",
           title: "フェニックス",
           kingaku: "108万円～",
           kikan: "約1年",
@@ -63,7 +63,7 @@ new Vue({
 
         {
           plan: "cocco",
-          img: "images/common/cocco.svg",
+          img: "/images/common/cocco.svg",
           title: "コッコ",
           kingaku: "45万円～",
           kikan: "約6ヵ月",
@@ -73,7 +73,7 @@ new Vue({
 
         {
           plan: "hiyoko",
-          img: "images/common/hiyoko.svg",
+          img: "/images/common/hiyoko.svg",
           title: "ひよこ",
           kingaku: "8.1万円〜",
           kikan: "約2〜5ヵ月",
@@ -85,7 +85,7 @@ new Vue({
       courses: [
         {
           plan: "fenix",
-          img: "images/common/fenix.png",
+          img: "/images/common/fenix.png",
           title: "フェニックス",
           kingaku: "108万円～",
           kikan: "約1年",
