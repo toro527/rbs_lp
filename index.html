@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <title>リペアビジネススクール</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="format-detection" content="telephone=no,address=no,email=no">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10851556193"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10851556193'); </script>
+    <!-- Event snippet for Website lead conversion page -->
+    <script> gtag('event', 'conversion', {'send_to': 'AW-10851556193/oTVOCK_sg4wYEOG2trYo'}); </script>
+    <link rel="icon" href="/images/favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/common-style.css">
+	</head>
+
+	<body>
+    <div id="lp">
+
+      <div id="header">
+        <header class="nav">
+          <nav class="navbar">
+
+            <div class="navbar-brand">
+              <a class="navbar-brand-item" href="/">
+                <p class="">リペアビジネススクール</p>
+                <figure>
+                  <img src="/images/common/logo.png" alt="RBS"><figcaption>RBS</figcaption>
+                </figure>
+              </a>
+            </div>
+
+            <div class="navbar-links">
+              <p><span>安定と自由を手に入れたいなら！</span></p>
+              <div class="navbar-links-item">
+
+                <a href="#contact">資料請求へ</a>
+              </div>
+            </div>
+
+          </nav>
+          <!-- <div class="curpon pc" v-show="actClose">
+            <a @click="couron"><b-icon icon="close-circle-outline" ></b-icon></a>
+            <p><b>新年度記念！</b><br><b>春の入学キャンペーンで</b><br><span>4/30日まで</span>使用できる<span>15%オフ</span>の<br>クーポンを<span
+            class="line">公式LINE</span>で配布中！<br>検討している方はこのチャンスを逃すな！</p>
+          </div> -->
+        </header>
+      </div>
+      <!--ここから本文-->
+      <article class="lp" v-cloak >
+
+        <section class="mainvisual">
+          <div class="swiper mvswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-img" v-if="inWidth > 1024">
+                  <img src="images/common/kb-bk3.jpg" alt="RBS">
+                </div>
+                <div class="slide-img" v-else>
+                  <img src="images/common/kb-bk3.jpg" alt="RBS">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img" v-if="inWidth > 1024">
+                  <img src="images/common/kb-bk.jpg" alt="RBS">
+                </div>
+                <div class="slide-img" v-else>
+                  <img src="images/common/kb-bk.jpg" alt="RBS">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="msg" >
+            <p class="desc">独立で必要な経営戦略<br>リペア技術を学ぶ<br>
+              スキマ時間に好きなだけ<br>スマホ一つオンラインで</p>
+            <div class="msg-logo">
+              <img src="images/common/logo.png" alt="RBS">
+              <h2>R B S</h2>
+            </div>
+            <h3>リペアビジネススクール</span></h3>
+            <a href="https://repair-business-school.com/member/" target="_blank">新規登録して入会</a>
+          </div>
+        </section>
+
+        <section id="beforeafter">
+          <h2>リペア補修とは？</h2>
+          <p>住宅や施設、店舗などの工事中についてしまったキズを補修（リペア）するといったお仕事です。<br>交換をするのではなく補修をすることによってコストが抑えられSDGsのこの時代で今注目の技術職となっています。</p>
+          <div class="beforeafter">
+            <ul>
+              <li v-for="(item,index) in cases" :key="index">
+                <figure>
+                  <img :src="item.bef">
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure>
+                  <img :src="item.aft">
+                  <figcaption>After</figcaption>
+                </figure>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section id="plan">
+
+          <div class="rbs">
+            <h2>初心者から学べる<br><span>動画コンテンツ配信型</span>スクール</h2>
+            <div class="rbs-box">
+              <p>多くのリペアスクールでは技術の講習はあるけど経営を教えてくれるところはほとんどありません。</p>
+              <p>RBSではリペアの技術だけではなく経営する上で大事な集客や営業、経営戦略まで網羅した今までにないリペアのスクールになっています。</p>
+            </div>
+          </div>
+          <div class="pcv" v-if="inWidth > 897">
+            <div class="plan">
+              <transition name="fadey">
+                <ul v-show="plan2">
+
+                  <li
+                    v-for="(item,index)  in plans" :key:="index">
+                    <figure><img :src="item.img"></figure>
+                    <h3>{{item.title}}</h3>
+                    <a :class="item.plan" @click="btn(item.plan)">詳しく見る<b-icon icon="chevron-down" /></a>
+                    <p class="kikan"><span>期間：{{item.kikan}}</span></p>
+                    <p class="kingaku">{{item.kingaku}}<span>(税込)</span></p>
+
+                    <div class="youtube" v-html="item.youtube"></div>
+                  </li>
+                </ul>
+              </transition>
+            </div>
+
+            <div id="course" >
+              <div class="course" >
+                <div class="course-wrap" v-show="ActiveBtnFx" >
+
+                  <a @click="btn('fenix')" ><b-icon icon="close-circle" /></a>
+
+                  <div class="course_box fenix">
+                    <div class="course_box-item">
+                      <div class="course_box-title">
+                        <p class="subtitle">稼げる補修屋は対策が違う！<br>20年の経験と実績に基づいた経営コンサル</p>
+                        <p class="kikan">期間目安：約1年</p>
+                        <p class="kingaku">金額：108万円～</p>
+                      </div>
+
+                    </div>
+                    <div class="course_box-item">
+                      <h4>コースの紹介</h4>
+                      <!-- <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/4QQ6KbpfF_k" title="フェニックスコース" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div> -->
+                    </div>
+                  </div>
+
+                  <div class="course_fenix">
+
+                    <h4>コースの特徴</h4>
+                    <ul >
+                      <li>リペアの技術や経営を学び、必ず再現できる戦略や安定した収益、今以上に拡大していきたい方のための<span>コンサルプログラムを一人一人にしっかりコミット</span>したコースになります。</li>
+                      <li>それによって顧客・単価・人数・技術力・機動力・経験・地域から分析し、<span>利益や企業拡大や安定した収益を上げていくこと</span>ができます。</li>
+                      <li>現状の問題点や悩みから必ず解決策を出して、取り組んでいただければ問題の解決だけでなく、<span>経営の目標地点まで辿り着けるサポート</span>をしていきます。</li>
+                      <li><span>未経験で初めて</span>も軌道に乗せていくことも可能です。</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="plan-flow" >
+                    <h3>入会の流れ（5ステップ）</h3>
+                    <div class="plan-flow-step" >
+                      <h4>STEP1</h4>
+                      <div class="step">
+                        <p class="step 1">私たちがあなたの仕事のメインエリアに伺って市場調査をした後に今後の流れについてお話をしていきます。<br><span>※初回（現地市場調査の実施、人口、住宅価格、単価、SWOT分析、）</span></p>
+
+                        <p class="step2">現在の状況から今後のビジョン（目標）をヒアリングして現在の問題点を洗い出し課題を明確にします。<br>その後は課題を克服するためにまずは何から着手すれば、どう解決できるのかの道筋をたて対策までを決めていきます<br><span>※これはオフラインで実際に対面して行います。</span></p>
+                        <div class="sankaku-g"></div>
+                      </div>
+                    </div>
+                    <div class="plan-flow-step" >
+                      <h4>STEP 2</h4>
+                      <div class="step">
+                        <p>地域や場所・経験・単価・依頼内容などによりサービスを考え同業他社より優位性のある経営していくための独自の戦略プログラム作成<br><span>※（12ヶ月プログラム）</span></p>
+                        <div class="sankaku"></div>
+                      </div>
+                    </div>
+
+                    <div class="plan-flow-step" >
+                      <h4>STEP 3</h4>
+                      <div class="step">
+                        <p>その後は月に2回リモート（経過報告、対策相談等30分）にて話し合います<br><span>※状況により緊急相談</span></p>
+                        <div class="sankaku"></div>
+                      </div>
+                    </div>
+                    <div class="plan-flow-step" >
+                      <h4>STEP 4</h4>
+                      <div class="step">
+                        <p>前年度と比較し、売上状況などから繁忙期と閑散期に向けた対策の策定（12ヶ月目）<br><span>※状況により緊急相談</span></p>
+                        <div class="sankaku"></div>
+                      </div>
+                    </div>
+                    <div class="plan-flow-step" >
+                      <h4>STEP 5</h4>
+                      <div class="step">
+                        <p>前年度比較とKPI（業績評価指標）に対し、翌期の取組む対策の策定<br><span>※（12ヶ月プログラム終了時）</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plan-tokuten">
+                    <h3>フェニックスコース<span>2</span>大特典！</h3>
+                    <ul class="present">
+                      <li>① RBS動画コンテンツ全て無料で学び放題</li>
+                      <li>② RBSオンラインサロン1年間無料</li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="course_hiyoko" v-show="ActiveBtnHk" >
+                  <a @click="btn('hiyoko')" ><b-icon icon="close-circle" /></a>
+
+                  <div class="course_box">
+                    <div class="course_box-item">
+
+                      <!-- <div class="youtube" >
+                        <iframe src="https://www.youtube.com/embed/v3USEkud8F8" title="RBSひよこコースPR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div> -->
+                    </div>
+                    <div class="course_box-item">
+                      <div class="course_box-title">
+                        <h4>コースの紹介</h4>
+                        <p class="subtitle">空いた時間毎日コツコツ学んで、<br class="sp">開業を目指そう！</p>
+
+                        <p class="kikan">期間：約2か月</p>
+                        <p class="kingaku">金額：8.1万円～</p>
+                        <p class="kikan2">サブスク：３ヶ月・６ヶ月</p>
+                        <p class="kingaku">8.5万円・9.0万円</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="course_hiyoko_toku">
+
+                    <h4>コースの特徴</h4>
+                    <ul>
+                      <li>リペアというものを1から学んでいただく<span>初心者〜中級者向け</span>のカリキュラムになっています。</li>
+                      <li><span>また、入会金などは一切なくライフスタイルに合わせて選択が可能です。</span>お支払い方法も一括かサブスクか長めか短めかで選択が可能なのであることと、サブスクであれば、もし「イマイチ学べないな」と感じた方は途中で退会されても<span>1ヶ月単位</span>でしか金額がかからないので安心して始められるコースになります。</li>
+                      <li>
+                        <h3>ひよこロング（視聴期間/6ヵ月）<br>サブスク支払い期間：5カ月</h3>
+                        <p>週1本解放される<span>合計約20本の動画コンテンツを6ヶ月間</span>で学んでいただき、受講完了時にはリペアを副業にすることはもちろんのこと、専業として独立しても十分に戦っていける知識技技術力を目指します。</p>
+                      </li>
+                      <li>
+                        <h3>ひよこショート（視聴期間/3ヵ月）<br>サブスク支払い期間：3カ月</h3>
+                        <p>週2本解放される<span>合計約20本の動画コンテンツを3ヶ月間</span>で学んでいただき、受講完了時にはリペアを副業にすることはもちろんのこと、専業として独立しても十分に戦っていける知識技技術力を目指します。</p>
+                      </li>
+                      <li>
+                        <h3>ひよこコース（2ヵ月間：見放題）</h3>
+                        <p><span>合計約20本の動画コンテンツを2ヶ月間</span>見放題で学んでいただき、受講完了時にはリペアを副業にすることはもちろんのこと、専業として独立しても十分に戦っていける知識技技術力を目指します。</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="course_hiyoko_tokuten">
+                    <h3>カリキュラム</h3>
+                    <p>※タップまたはクリックするとそれぞれのカリキュラム一覧が切り替わります。<span>※2023年1月現在</span></p>
+                    <ul class="title-btn">
+                      <li ><span @click="hiyokoJ">実技一覧</span></li>
+                      <li><span @click="hiyokoZ">座学一覧</span></li>
+                    </ul>
+                    <div class="swich">
+                      <ul v-show="hiyoko_Jitu">
+                        <li v-for="(list,index) in hiyokoJitu" :key="index">{{list}}</li>
+                      </ul>
+                      <ul v-show="hiyoko_Zagaku" class="last">
+                        <li v-for="(list,index) in hiyokoZa" :key="index">{{list}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="course_cocco" v-show="ActiveBtnCc" >
+                  <a @click="btn('cocco')" ><b-icon icon="close-circle" /></a>
+                  <div class="course_box">
+                    <div class="course_box-item">
+                      <div class="course_box-title">
+                        <p class="subtitle">技術だけでは成功できない！<br>経営にまつわる営業、拡大、集客方法を徹底的に学ぶ！</p>
+                        <p class="kikan">期間：約6か月</p>
+                        <p class="kingaku">金額：45万円～</p>
+                      </div>
+                    </div>
+                    <div class="course_box-item">
+                      <h4>コースの紹介</h4>
+                      <!-- <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/vv29p0wbtxU" title="RBSコッココースPR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="course_cocco_toku">
+                    <h4>コースの特徴</h4>
+                    <ul>
+                      <li>リペアの技術や経営を<span>トコトン学ぶ経験者向け</span>のカリキュラムになっています。</li>
+                      <li>週に<span>2本解放される約45本の動画</span>コンテンツを6ヶ月かけて学んでいただくコースです。</li>
+                      <li>受講完了時には通常の補修屋にはない<span>独自の武器や知識を圧倒的な強みとして身につけていただき</span>経営集客の安定拡大を目指していただきます。</li>
+                      <li>ただのキズ補修だけではなく<span>通常の補修屋さんではやらない様々な分野に応用できる</span>内容の講義も多数収録されていますので独自の知識技術として活用できます。</li>
+                      <li>座学では誰でも<span>再現性の高い経営戦略や継続的に稼いでいくためのノウハウ</span>をトコトン学んでいただきます。</li>
+                      <li>ただの補修屋では収まらないみんなに求められる<span>「仕上げのスペシャリスト」になるためのコース</span>になります。</li>
+                    </ul>
+                  </div>
+                  <div class="course_cocco_tokuten">
+                    <h3>全カリキュラム</h3>
+                    <p>※タップまたはクリックするとそれぞれのカリキュラム一覧が表示されます。<span>※2023年1月現在</span></p>
+                    <ul class="title-btn">
+                      <li ><span @click="coccoJ">実技一覧</span></li>
+                      <li><span @click="coccoZ">座学一覧</span></li>
+                    </ul>
+                    <div class="swich">
+                      <ul v-show="cocco_Jitu">
+                        <li v-for="(list,index) in coccoJitu" :key="index">{{list}}</li>
+                      </ul>
+                      <ul v-show="cocco_Zagaku" class="last">
+                        <li v-for="(list,index) in coccoZa" :key="index">{{list}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spv" v-else>
+            <div class="plan">
+
+                <ul v-for="(item,index) in courses" :key:="index" :class="item.plan">
+                  <li>
+                    <figure><img :src="item.img"></figure>
+                    <h3 class="main">{{item.title}}</h3>
+                    <a :class="item.plan" :href="'#' + item.plan">詳しく見る<b-icon icon="chevron-down" /></a>
+                    <p class="kikan"><span>期間：{{item.kikan}}</span></p>
+                    <p class="kingaku">{{item.kingaku}}<span>(税込)</span></p>
+
+                    <div class="youtube" v-html="item.youtube"></div>
+                    <div calss="ancer" :id="item.plan"></div>
+                  </li>
+                  <li id="course" >
+                    <div class="course" >
+                      <div class="course-wrap">
+                        <div class="course_box">
+                          <div class="course_box-item">
+                            <h4>コースの紹介</h4>
+                            <!-- <div class="youtube">
+                              <div class="youtube" v-html="item.youtube"></div>
+                            </div> -->
+                          </div>
+                          <div class="course_box-item">
+                            <div class="course_box-title">
+                              <p class="subtitle" v-html="item.subtitle"></p>
+                              <p class="kikan">期間目安：{{item.kikan}}</p>
+                              <p class="kingaku">金額：{{item.kingaku}}</p>
+                              <p v-if="item.kikan2" class="kikan">{{item.kikan2}}</p>
+                              <p v-if="item.kingaku2" class="kingaku">{{item.kingaku2}}</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div v-if="item.plan=='fenix'" >
+                          <div class="course_fenix">
+
+                            <h4>コースの特徴</h4>
+                            <ul >
+                              <li><p>リペアの技術や経営を学び、必ず再現できる戦略や安定した収益、今以上に拡大していきたい方のための<span>コンサルプログラムを一人一人にしっかりコミット</span>したコースになります。</p></li>
+                              <li><p>それによって顧客・単価・人数・技術力・機動力・経験・地域から分析し、<span>利益や企業拡大や安定した収益を上げていくこと</span>ができます。</p></li>
+                              <li><p>現状の問題点や悩みから必ず解決策を出して、取り組んでいただければ問題の解決だけでなく、<span>経営の目標地点まで辿り着けるサポート</span>をしていきます。</p></li>
+                              <li><p><span>未経験で初めて</span>も軌道に乗せていくことも可能です。</p></li>
+                            </ul>
+
+                          </div>
+
+                          <div class="plan-flow" >
+                            <h3>入会の流れ（5ステップ）</h3>
+                            <div class="plan-flow-step" >
+                              <h4>STEP1</h4>
+                              <div class="step">
+                                <p class="step 1">私たちがあなたの仕事のメインエリアに伺って市場調査をした後に今後の流れについてお話をしていきます。<br><span>※初回（現地市場調査の実施、人口、住宅価格、単価、SWOT分析、）</span></p>
+
+                                <p class="step2">現在の状況から今後のビジョン（目標）をヒアリングして現在の問題点を洗い出し課題を明確にします。<br>その後は課題を克服するためにまずは何から着手すれば、どう解決できるのかの道筋をたて対策までを決めていきます<br><span>※これはオフラインで実際に対面して行います。</span></p>
+                                <div class="sankaku-g"></div>
+                              </div>
+                            </div>
+                            <div class="plan-flow-step" >
+                              <h4>STEP 2</h4>
+                              <div class="step">
+                                <p>地域や場所・経験・単価・依頼内容などによりサービスを考え同業他社より優位性のある経営していくための独自の戦略プログラム作成<br><span>※（12ヶ月プログラム）</span></p>
+                                <div class="sankaku"></div>
+                              </div>
+                            </div>
+
+                            <div class="plan-flow-step" >
+                              <h4>STEP 3</h4>
+                              <div class="step">
+                                <p>その後は月に2回リモート（経過報告、対策相談等30分）にて話し合います<br><span>※状況により緊急相談</span></p>
+                                <div class="sankaku"></div>
+                              </div>
+                            </div>
+                            <div class="plan-flow-step" >
+                              <h4>STEP 4</h4>
+                              <div class="step">
+                                <p>前年度と比較し、売上状況などから繁忙期と閑散期に向けた対策の策定（12ヶ月目）<br><span>※状況により緊急相談</span></p>
+                                <div class="sankaku"></div>
+                              </div>
+                            </div>
+                            <div class="plan-flow-step" >
+                              <h4>STEP 5</h4>
+                              <div class="step">
+                                <p>前年度比較とKPI（業績評価指標）に対し、翌期の取組む対策の策定<br><span>※（12ヶ月プログラム終了時）</span></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="plan-tokuten">
+                            <h3>フェニックスコース<span>2</span>大特典！</h3>
+                            <ul class="present">
+                              <li>① RBS動画コンテンツ全て無料で学び放題</li>
+                              <li>② RBSオンラインサロン1年間無料</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!--/fenix-->
+                        <div v-else-if="item.plan=='cocco'" >
+                          <div class="course_cocco_toku">
+
+                            <h4>コースの特徴</h4>
+                            <ul>
+                              <li><p>リペアの技術や経営を<span>トコトン学ぶ経験者向け</span>のカリキュラムになっています。</p></li>
+                              <li><p>週に<span>2本解放される約45本の動画</span>コンテンツを6ヶ月かけて学んでいただくコースです。</p></li>
+                              <li><p>受講完了時には通常の補修屋にはない<span>独自の武器や知識を圧倒的な強みとして身につけていただき</span>経営集客の安定拡大を目指していただきます。</p></li>
+                              <li><p>ただのキズ補修だけではなく<span>通常の補修屋さんではやらない様々な分野に応用できる</span>内容の講義も多数収録されていますので独自の知識技術として活用できます。</p></li>
+                              <li><p>座学では誰でも<span>再現性の高い経営戦略や継続的に稼いでいくためのノウハウ</span>をトコトン学んでいただきます。</p></li>
+                              <li><p>ただの補修屋では収まらないみんなに求められる<span>「仕上げのスペシャリスト」になるためのコース</span>になります。</p></li>
+                            </ul>
+
+                          </div>
+                          <div class="course_cocco_tokuten">
+                            <h3>全カリキュラム</h3>
+                            <p>※タップまたはクリックするとそれぞれのカリキュラム一覧が表示されます。<span>※2023年1月現在</span></p>
+                            <ul class="title-btn">
+                              <li ><span @click="coccoJ">実技一覧</span></li>
+                              <li><span @click="coccoZ">座学一覧</span></li>
+                            </ul>
+                            <div class="swich">
+                              <ul v-show="cocco_Jitu">
+                                <li v-for="(list,index) in coccoJitu" :key="index">{{list}}</li>
+                              </ul>
+                              <ul v-show="cocco_Zagaku" class="last">
+                                <li v-for="(list,index) in coccoZa" :key="index">{{list}}</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!--/cocco-->
+                        <div v-else >
+                          <div class="course_hiyoko_toku">
+
+                            <h4>コースの特徴</h4>
+                            <ul>
+                              <li><p>リペアというものを1から学んでいただく<span>初心者〜中級者向け</span>のカリキュラムになっています。</p></li>
+                              <li><p><span>また、入会金などは一切なくライフスタイルに合わせて選択が可能です。</span>お支払い方法も一括かサブスクか長めか短めかで選択が可能なのであることと、サブスクであれば、もし「イマイチ学べないな」と感じた方は途中で退会されても<span>1ヶ月単位</span>でしか金額がかからないので安心して始められるコースになります。</p></li>
+                              <li>
+                                <h3>ひよこロング（視聴期間/6ヵ月）<br>サブスク支払い期間：5カ月</h3>
+                                <p>週1本解放される<span>合計約20本の動画コンテンツを6ヶ月間</span>で学んでいただき、受講完了時にはリペアを副業にすることはもちろんのこと、専業として独立しても十分に戦っていける知識技技術力を目指します。</p>
+                              </li>
+                              <li>
+                                <h3>ひよこショート（視聴期間/3ヵ月）<br>サブスク支払い期間：3カ月</h3>
+                                <p>週2本解放される<span>合計約20本の動画コンテンツを3ヶ月間</span>で学んでいただき、受講完了時にはリペアを副業にすることはもちろんのこと、専業として独立しても十分に戦っていける知識技技術力を目指します。</p>
+                              </li>
+                              <li>
+                                <h3>ひよこコース（2ヵ月間：見放題）</h3>
+                                <p><span>合計約20本の動画コンテンツを2ヶ月間</span>見放題で学んでいただき、受講完了時にはリペアを副業にすることはもちろんのこと、専業として独立しても十分に戦っていける知識技技術力を目指します。</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="course_hiyoko_tokuten">
+                            <h3>カリキュラム</h3>
+                            <p>※タップまたはクリックするとそれぞれのカリキュラム一覧が切り替わります。<span>※2023年1月現在</span></p>
+                            <ul class="title-btn">
+                              <li ><span @click="hiyokoJ">実技一覧</span></li>
+                              <li><span @click="hiyokoZ">座学一覧</span></li>
+                            </ul>
+                            <div class="swich">
+                              <ul v-show="hiyoko_Jitu">
+                                <li v-for="(list,index) in hiyokoJitu" :key="index">{{list}}</li>
+                              </ul>
+                              <ul v-show="hiyoko_Zagaku" class="last">
+                                <li v-for="(list,index) in hiyokoZa" :key="index">{{list}}</li>
+                              </ul>
+
+                            </div>
+                          </div>
+                        </div>
+                        <!--/hiyoko-->
+
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="about">
+            <h2>RBSとは</h2>
+            <p>「全ての人がリペアを出来るように」これを実現できるカリキュラムを作りました。<br>それらを初心者から上級者までオンラインで学べる動画コンテンツ配信型のスクールです。<br>多くのリペアスクールでは技術の講習はあるけど経営を教えてくれるところはほとんどありません。<br>RBSではリペアの技術だけではなく経営する上で大事な集客や営業、経営戦略まで網羅した今までにないリペアのスクールになっています。<br>とりあえずリペアを知りたい身に付けたい方には『ひよこコース』<br>通常の補修屋さんでやらないような知識、安定的にかつ継続的に経営をしていくノウハウや知識考え方を座学の講義を通してとことん学ぶなら『コッココース』<br>この２つのコースをご用意しています。</p>
+          </div>
+          <div class="movie" >
+            <h2>ブランドムービー</h2>
+            <video
+              src="images/movies/main.mp4" autoplay="" muted="" loop="" playsinline=""></video>
+          </div>
+          <div class="problem" >
+            <h2>技術と経営知識をセットで身につけ<br class="sp">他者との差別化を図る</h2>
+            <p class="subtil">こんなことで悩んでいませんか？</p>
+            <ul>
+              <li v-for="(item,index) in problem" :key="index"
+              :style="{ 'background-image': 'url('+item.img+')' }">
+                <b-icon :icon="item.icon" /></b-icon><h3 v-html="item.text"></h3>
+              </li>
+            </ul>
+            <p class="problem-text">現場には多くの問題が生じたり、実際にリペア屋として開業してもうまく経営できない、仕事が取れない等のお話をよく耳にします。<br>それらの問題をRBSに入会してコンテンツで学び、問題解決、知識の共有、経営の改善をしていきませんか？</p>
+          </div>
+        </section>
+
+        <section id="salon">
+
+          <div class="salon">
+            <h2><span class="small">オンラインサロンについて</span><br>卒業生ならではの<br><span>悩み解決</span>サロン</h2>
+            <div class="disc">コツコツ稼ぐチリツモサロン！
+            </div>
+            <div class="rbs-box">
+              <p>ほとんどのリペア屋さんの悩みは、スキルがない！仕事がない！仕事がとれない！売上が安定しない！仲間がいない！と沢山の悩みをと知りました。</p>
+              <p>同じ悩みを抱えたもの同士、卒業したあともサロンで一緒に共有し協力し合って頑張りあえる仲間とともに、お互いに良くなる道に進みたいと心の底から思っています。</p>
+            </div>
+            <div class="salon-box2">
+              <figure><img src="images/common/onlinsalon2.jpg"></figure>
+              <div class="salon-step">
+                <div class="salon-step-head">
+                  <b-icon icon="hand-pointing-right"></b-icon>
+
+                  <h3>ご利用までの簡単ステップ</h3>
+                </div>
+                <ul>
+                  <li v-for="(item,index) in steps" :key="index">
+                    <p><span>{{index+ 1}}</span>{{item}}</p>
+                    <b-icon icon="chevron-down" />
+                  </li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="only">
+
+          <div class="only">
+            <h2><span class="small">独立開業について</span><br>オンラインスクール＆サロン<br><span>困ったらいつでも相談できる</span></h2>
+            <div class="disc">悩みや心配事は<br class="sp">サロンメンバーみんなで共有
+            </div>
+            <div class="only-box">
+              <p>いままでのステップから技術+ノウハウ+集客+経営・オンラインサロンでの情報集と仲間づくりにより初めてでも、副業・独立に踏み出しやすくなります！</p>
+            </div>
+            <div class="only-box2">
+              <figure><img src="images/common/plan4.jpg"></figure>
+              <div class="support_btn">
+                <p>公式ラインもあります。<br>公式ラインでしか見れない動画や<br>不定期でクーポンやお得な配信もありますので<br class="pc">ぜひ登録してください！</p>
+                <a href="https://repair-business-school.com/member/" target="_blank">公式LINEの登録</a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="offline">
+
+          <div class="offline">
+            <h2><span class="small"></span><br>オンラインだけで<br><span>本当に大丈夫・・・？</span></h2>
+            <figure><img src="images/common/offline.jpg"></figure>
+            <div class="offline-box">
+              <h3>オフラインもあります！</h3>
+              <p>オンラインだけでは心配な方や実際に手に取って学びたい方にも安心のオフライン講習も充実！</p>
+            </div>
+
+            <div class="offline-box2">
+              <p>オンラインでノウハウを覚え、自身で練習学習していただいてもリペア技術を習得することはできますが、更に上の学習やオンラインだけでは心配な方に向けての実地での講習もございます。<br>
+                リペア業界歴２０年以上のRBS講師が専門的な知識や長くこの業界に携わっているからこそ分かるリペアビジネスの仕組みなど実地の講習や座学での講習で初心者の方はもちろん経験者で幅を広げていきたい方もしっかりとサポートします。
+                </p>
+                <p>
+                <span class="small">※オフラインの講習になるので会場は神奈川県相模原市になります</span><br>
+                <span class="small">※オフライン講習は各コースご入会方のみの追加オプションになります</span></p>
+              <a href="https://repair-business-school.com/member/" target="_blank">資料請求へ</a>
+            </div>
+
+          </div>
+
+          <div class="swiper offlineSwiper">
+            <div class="swiper-wrapper" v-if="inWidth > 1024">
+              <div class="swiper-slide">
+                <img src="images/common/slide1.jpg" alt="オフラインの様子">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/common/slide2.jpg" alt="オフラインの様子">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/common/slide3.jpg" alt="オフラインの様子">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/common/slide4.jpg" alt="オフラインの様子">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/common/slide5.jpg" alt="オフラインの様子">
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="support">
+          <div class="support contents">
+            <h2>コース内の充実した<span>サポート</span></h2>
+            <ul>
+              <li>
+                <h3>無料会員期間</h3>
+                <p>いきなり有料会員ではなく、まずは14日間の無料会員登録をして頂き、実際の会員となった際の学べるイメージを体感することが可能です！</p>
+              </li>
+              <li>
+                <h3>個人合わせたコース</h3>
+                <p>リペアの仕事は、性別・年齢に大きな影響がない仕事なので、初心者の方・興味がある方・副業で始めたい方・既に仕事をしているがもっとバリバリやりたい方へそれぞれのプランをご用意しています。</p>
+              </li>
+              <li>
+                <h3>コース内のオプション</h3>
+                <p>コースを受講していただくと、さらに実際にリペアした素材を送って頂きさらなるアドバイスをお伝えするオプションもご用意しています。</p>
+              </li>
+            </ul>
+            <p style="text-align: left;">＊受講内容、期間はコースによって異なります<br>＊コンテンツで学んでも出来るようになる内容または仕上がりのクオリティには個人差があります<br>＊金額、サービス内容については予告なく変更する場合があります<br>＊本サービスは独立や売上、集客効果を必ず保証するものではありませんのでご了承ください</p>
+          </div>
+        </section>
+
+        <section id="cta">
+          <div class="cta contents">
+            <h2>公式LINEの登録</h2>
+
+            <p class="cta-head">公式ラインもあります。<br>公式ラインでしか見れない動画や<br>不定期でクーポンやお得な配信もありますので<br class="pc">ぜひ登録してください！</p>
+            <a href="https://lin.ee/XSP65hv" target="_blank">公式LINEでお友達登録へ</a>
+            <p class="cta-head3">お問い合わせ等でかなり反響を頂いているので<br class="pc">近日中に定員に達してしまう可能性があります。<br>ご希望の方はお早めにLINEでお友達登録をしてください。</p>
+
+
+            <div class="cta-foot">
+              <p>＜運営企業＞</p>
+              <ul>
+                <li>
+                  <img src="images/common/logo.png" alt="RBS">
+                  <h3 class="mincho">Repair Business School</h3>
+                </li>
+                <li>〒252-0134</li>
+                <li>神奈川県相模原市緑区下九沢170-7<br class="sp">TRCビル2F</li>
+                <li>TEL:042-713-1452</li>
+                <li><p class="mono">令和２年度補正 ものづくり補助金により作成</p></li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+        <section id="contact">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScX4Tk0sVycKVnr2HXjCcbc_MoQpccOFIFG1HRie2fkk3r1mA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </section>
+
+      </article>
+
+      <!--SP追尾-->
+      <div id="sp_footer">
+        <ul class="sp_footer_btn">
+          <li class="sp_footer_btn_item">
+            <a href="#header" >
+              <b-icon icon="email-outline"></b-icon>
+            </a>
+          </li>
+          <li class="sp_footer_btn_item">
+            <a href="#header" >
+
+              <b-icon icon="chevron-up"></b-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="nav nav-footer ">
+
+        <div class="sp_footer sp">
+          <!-- <div class="curpon" v-show="actClose">
+            <a @click="couron"><b-icon icon="close-circle-outline" ></b-icon></a>
+            <p><b>新年度記念！</b><br><b>春の入学キャンペーンで</b><br><span>4/30日まで</span>使用できる<span>15%オフ</span>の<br>クーポンを<span
+            class="line">公式LINE</span>で配布中！<br>検討している方はこのチャンスを逃すな！</p>
+          </div> -->
+          <ul>
+            <li><a href="#contact"><b-icon icon="arrow-right-drop-circle" size="is-large" ></b-icon><span>資料請求へ</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="copyright nomargin">©︎2022 RBS | repair-business-school.com</p>
+      </footer>
+
+    </div><!--//layout-default-->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
+
+
+
+
