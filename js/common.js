@@ -297,21 +297,20 @@ var swiper = new Swiper(".mvswiper", {
 });
 let offlineSwiper = new Swiper(".offlineSwiper", {
   loop: true, // ループ
-  slidesPerView: 2, // 一度に表示する枚数
-  speed: 1500, // 少しゆっくり(デフォルトは300)
+  speed: 6000, // 少しゆっくり(デフォルトは300)
+  allowTouchMove: false, // スワイプ無効
   autoplay: {
-    // 自動再生
-    delay: 1000, // 1秒後に次のスライド
+    //自動再生
+    delay: 0, // 途切れなくループ
     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    reverseDirection: true, // 逆方向有効化
   },
-  // ページネーション
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // 前後の矢印
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  // スライドの表示枚数
+  slidesPerView: 1,
+  breakpoints: {
+    // スライドの表示枚数：500px以上の場合
+    800: {
+      slidesPerView: 3,
+    },
   },
 });
