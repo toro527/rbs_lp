@@ -2232,6 +2232,7 @@ header {
         width: 50rem;
         @include media897() {
           width: 100%;
+          max-width: 50rem;
         }
       }
     }
