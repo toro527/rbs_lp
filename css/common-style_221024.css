@@ -2,13 +2,28 @@
 /* color */ /* -------------------------- */
 /* reset */
 /* -------------------------- */
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+figure {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -30,13 +45,18 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  font-family: "游ゴシック Medium", YuGothic-M, YuGothic, "游ゴシック体", YuGothic, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Noto Sans JP, メイリオ, Meiryo, sans-serif;
+  font-family: "游ゴシック Medium", YuGothic-M, YuGothic, "游ゴシック体",
+    YuGothic, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Noto Sans JP,
+    メイリオ, Meiryo, sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold;
 }
 
@@ -53,7 +73,8 @@ img {
   width: 100%;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   opacity: 0.8;
 }
 
@@ -207,7 +228,7 @@ header .nav-menu ul li .logout {
 }
 @media screen and (min-width: 897px) {
   header .nav-menu ul li a,
-header .nav-menu ul li .logout {
+  header .nav-menu ul li .logout {
     font-weight: normal;
   }
 }
@@ -223,7 +244,8 @@ header .nav-menu ul li a .icon i,
 header .nav-menu ul li .logout .icon i {
   font-size: 3rem;
 }
-header .nav-menu ul li:nth-child(2), header .nav-menu ul li:nth-child(5) {
+header .nav-menu ul li:nth-child(2),
+header .nav-menu ul li:nth-child(5) {
   border-bottom: 1px solid #ccc;
   padding-bottom: 2rem;
 }
@@ -248,7 +270,8 @@ header .nav-menu-admin li:first-child {
 #kv {
   width: 100%;
   position: relative;
-  background: linear-gradient(25deg, rgba(0, 0, 0, 0.8), rgba(9, 9, 9, 0.7)), url("/images/common/kb-bk.jpg") no-repeat;
+  background: linear-gradient(25deg, rgba(0, 0, 0, 0.8), rgba(9, 9, 9, 0.7)),
+    url("images/common/kb-bk.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -505,7 +528,7 @@ header .nav-menu-admin li:first-child {
   #support .support .support_box img {
     max-height: 300px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 #support .support .support_box p {
@@ -968,7 +991,7 @@ header .nav-menu-admin li:first-child {
   color: #fff;
 }
 .school-salon .salon {
-  background-image: url("/images/common/salon_bg.jpg");
+  background-image: url("images/common/salon_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1432,4 +1455,4 @@ header .nav-menu-admin li:first-child {
 .fade-leave-to {
   opacity: 0;
   transform: scale(0.97);
-}/*# sourceMappingURL=common-style.css.map */
+} /*# sourceMappingURL=common-style.css.map */

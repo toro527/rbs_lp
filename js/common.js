@@ -98,7 +98,7 @@ new Vue({
         {
           plan: "cocco",
           title: "コッココース",
-          img: "/images/common/cocco.svg",
+          img: "images/common/cocco.svg",
           text: "経営が難しいと思った人、営業、拡大、経営は実はこんなに簡単だった！",
           kingaku: "45万円～",
           kikan: "約6ヵ月",
@@ -111,7 +111,7 @@ new Vue({
         {
           plan: "hiyoko",
           title: "ひよこコース",
-          img: "/images/common/hiyoko.svg",
+          img: "images/common/hiyoko.svg",
           text: "空いた時間毎日コツコツ学んで、開業を目指そう！",
           kingaku: "16,830円～/月額",
           kingaku: "8.5万円・9.0万円",
@@ -210,17 +210,17 @@ new Vue({
       problem: [
         {
           icon: "cash-multiple",
-          img: "/images/common/nayami1.jpg",
+          img: "images/common/nayami1.jpg",
           text: "集客方法や顧客獲得がうまくいかない・・",
         },
         {
           icon: "youtube",
-          img: "/images/common/nayami2.jpg",
+          img: "images/common/nayami2.jpg",
           text: "閑散期と繁忙期の仕事量のムラが激しい・・",
         },
         {
           icon: "laptop",
-          img: "/images/common/nayami3.jpg",
+          img: "images/common/nayami3.jpg",
           text: "施工管理業務で引き渡し当日にキズを見つけてしまったが予算が取れない、急な依頼なため業者が捕まらない",
         },
       ],

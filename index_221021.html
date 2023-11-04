@@ -5,23 +5,23 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 		<meta name="format-detection" content="telephone=no,address=no,email=no">
-    <link rel="icon" href="/images/favicon.ico"> 
+    <link rel="icon" href="images/favicon.ico">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">		
-		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">		
-		<link rel="stylesheet" href="css/common-style.css">		
+		<link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/common-style.css">
 	</head>
 
 	<body>
-    <div id="lp">  
+    <div id="lp">
       <div id="header">
-        
+
         <header class="nav">
           <nav class="navbar salon-nav">
-      
-            <div class="navbar-brand">      
+
+            <div class="navbar-brand">
               <a class="navbar-item" href="/">
               <img src="images/common/logo.png" alt="RBS">
               <span class="pc">Repair Business School</span>
@@ -38,37 +38,37 @@
                 <span class="line line_03" :class="{'btn_line03':ActiveBtn}"></span>
               </div>
             </div>
-          </nav>      
+          </nav>
           <aside class="nav">
-            
+
             <div class="nav-menu" v-show="ActiveBtn">
               <ul class="nav-menu-menbers">
                 <li v-for="(item,index) in menu" :key="index">
                   <a :href="item.url">
                     <div>{{item.title}}</div><b-icon icon="chevron-right" />
-                  </a>                    
+                  </a>
                 </li>
               </ul>
             </div>
-            
-          </aside>      
+
+          </aside>
         </header>
       </div>
       <!--ここから本文-->
       <article class="lp" >
-      
+
         <section id="kv">
           <div class="kv">
             <div class="kv-top" >
-              <img src="images/common/logo.png" alt="RBS">                   
+              <img src="images/common/logo.png" alt="RBS">
             </div>
             <div class="msg" >
               <h2>R B S</h2>
               <p>1か月でリペア脳に！<br>そしてたったの5か月で開業に！</p>
-              <p>経営が難しいと思った人、<br>営業、拡大、経営は<br>実はこんなに簡単だった！</p>           
+              <p>経営が難しいと思った人、<br>営業、拡大、経営は<br>実はこんなに簡単だった！</p>
                 <a href="https://lin.ee/lGRisGd">LINEでお友達になる</a>
             </div>
-          </div>    
+          </div>
         </section>
         <section id="about">
           <div class="contents">
@@ -89,32 +89,32 @@
         </section>
 
         <section id="support">
-			
+
           <div class="support-head">
             <h2 class="mincho" >RBSでは<br class="pc">あなたの<br class="sp">チャレンジを<br class="sp">全力でサポート</h2>
           </div>
           <div class="support"
             v-for="({ title,text,img}, i) in support"
-          >				
-            <div class="support_box">					
+          >
+            <div class="support_box">
               <div class="support_box-title">
                 <div class="no_big">{{i+1}}</div>
-                <h3>{{title}}</h3>							
+                <h3>{{title}}</h3>
               </div>
               <p>{{text}}</p>
             </div>
             <div class="support_box">
               <img :src="img" :alt="title">
-            </div>			
+            </div>
           </div>
           <div class="support_btn">
             <a href="https://lin.ee/lGRisGd">LINEでお友達になる</a>
           </div>
-        
+
         </section>
 
         <section id="rbs">
-          
+
           <div class="rbs">
             <div class="rbs-head">
               <h2 class="mincho" >RBSについて知る</h2>
@@ -128,16 +128,16 @@
             <div class="rbs-box contents">
               <h3>ブランドムービー</h3>
               <video src="images/movies/main.mp4" autoplay="" muted="" loop="" playsinline=""></video>
-            </div>          
+            </div>
           </div>
-        </section>  
+        </section>
 
-          
-        <section class="school-plan">          
+
+        <section class="school-plan">
           <div class="school-plan-head">
             <h2 class="mincho" >プランについて</h2>
           </div>
-          <div class="plan-box contents">  
+          <div class="plan-box contents">
             <h3>選べる3つのコース</h3>
             <div class="plan-head">
               <p>RBSではご自身のステップに応じて2つのコースをご用意しています。<br>動画型の講義を毎週1〜2本配信して、ご自身の好きな時間や空いた時間の中で学んでいただきます。<br> 卒業したら終わりでなく、卒業者限定サロンに入ることによって、ずっと動画で学べ、サロン生同士で新たな技術や仕事の共有や営業、経営方法までが互いに学びあえるシステムになります。</p>
@@ -146,16 +146,16 @@
                 <figure class="cocco"><img src="images/common/cocco.svg" alt="コッコ"><figcaption>コッコ</figcaption></figure>
                 <figure class="fenix"><img src="images/common/fenix.png" alt="フェニックス"><figcaption>フェニックス</figcaption></figure>
               </div>
-              <a href="https://lin.ee/lGRisGd" target="blank">公式ラインではお得な情報ここでしか見れない<br>動画などありますので登録お願いします！<br><span>※無料会員期間中のみ10％クーポンゲット！</span><img alt="LINE@友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class="contact_line"></a>  
-          
+              <a href="https://lin.ee/lGRisGd" target="blank">公式ラインではお得な情報ここでしか見れない<br>動画などありますので登録お願いします！<br><span>※無料会員期間中のみ10％クーポンゲット！</span><img alt="LINE@友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class="contact_line"></a>
+
             </div>
-          </div> 
-          
-          <div id="course" >  
+          </div>
+
+          <div id="course" >
             <div class="course"
               v-for="(item,index) in course" :key="index"
-            >				
-              <h3>{{item.title}}</h3>	
+            >
+              <h3>{{item.title}}</h3>
               <div class="course_fenix" v-if="item.title=='フェニックスコース'">
                 <h4>コースの特徴</h4>
                 <ul >
@@ -164,56 +164,56 @@
                   <li>現状の問題点や悩みから必ず解決策を出して、取り組んでいただければ問題の解決だけでなく、<span>経営の目標地点まで辿り着けるサポート</span>をしていきます。</li>
                   <li><span>未経験で初めて</span>も軌道に乗せていくことも可能です。</li>
                 </ul>
-              </div>			
-              <div class="course_box">	
-                <div class="course_box-item">					
+              </div>
+              <div class="course_box">
+                <div class="course_box-item">
                   <div class="course_box-title">
                     <figure>
                       <img :src="item.img" alt="item.title" />
                     </figure>
-                    <p class="subtitle">{{item.text}}</p>	
-                   
+                    <p class="subtitle">{{item.text}}</p>
+
                     <p class="kingaku">
                       <span>期間目安：{{item.kikan}}</span>
                       <span>金額：{{item.kingaku}}</span>
-                    </p> 
-                        
+                    </p>
+
                   </div>
                 </div>
                 <div class="course_box-item">
-                  <h4>コースの紹介</h4>                  
+                  <h4>コースの紹介</h4>
                   <div class="youtube" v-html="item.youtube"></div>
-                </div>			
+                </div>
               </div>
             </div>
             <div class="support_btn">
               <a href="https://lin.ee/lGRisGd">LINEでお友達になる</a>
             </div>
-          </div>     
+          </div>
 
         </section>
-        <section class="school-salon">       
+        <section class="school-salon">
           <div class="salon" >
             <h2 class="mincho">卒業生だけ入会できる<br>オンラインサロン</h2>
             <div class="salon-head">
-              
+
               <h3>「コツコツ稼ぐチリツモサロン」</h3>
               <p>今まで沢山のリペア屋さんと、お付き合いはありましたが、開業しているほとんどのリペア屋さんの悩みは、スキルがない！仕事がない！仕事がとれない！売上が安定しない！仲間がいない！と沢山の悩みを聞いてきて、「まだリペア業界にそれら全てを教えることができるスクールがないんだ」と知りました。<br>だからこそ同じ悩みを抱えた人にこそ知って学んでもらい、卒業したあともサロンで一緒に共有し協力し合って頑張りあえる仲間とともに、お互いに良くなる道に進みたいと心の底から思っています。<br>ぜひ沢山の仲間達と「コツコツ」一緒にがんばりませんか？</p>
             </div>
             <h3>RBS（Ripair Business Salon）<br><span>オンラインサロン</span></h3>
             <div class="salon-box contents">
-              
+
               <div class="salon-box-item">
-                
+
                 <figure>
-                  <img src="images/common/onlinsalon2.jpg" alt="オンラインサロン">           
+                  <img src="images/common/onlinsalon2.jpg" alt="オンラインサロン">
                 </figure>
               </div>
               <div class="salon-box-item">
                 <ul>
                   <li v-for="(item,index) in salons" :key="index">
                     <figure class="sp">
-                      <img :src="item.url" :alt="item.title">           
+                      <img :src="item.url" :alt="item.title">
                     </figure>
                     <div class="text">
                       <h4>{{item.title}}</h4>
@@ -241,21 +241,21 @@
         <section id="company">
           <ul>
             <li>
-              <img src="images/common/logo.png" alt="RBS">     
-              <h3 class="mincho">Repair Business School</h3>              
+              <img src="images/common/logo.png" alt="RBS">
+              <h3 class="mincho">Repair Business School</h3>
             </li>
             <li>〒252-0134</li>
             <li>神奈川県相模原市緑区下九沢170-7<br class="sp">TRCビル2F</li>
             <li>TEL:042-713-1452</li>
-            <li><a href="https://lin.ee/lGRisGd" target="blank"><img alt="LINE@友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class="contact_line"></a> </li>			
-            <li><p class="mono">令和２年度補正 ものづくり補助金により作成</p></li>	
+            <li><a href="https://lin.ee/lGRisGd" target="blank"><img alt="LINE@友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class="contact_line"></a> </li>
+            <li><p class="mono">令和２年度補正 ものづくり補助金により作成</p></li>
           </ul>
         </section>
 
       </article>
 
       <!--SP追尾-->
-      
+
       <div id="sp_footer">
         <ul class="sp_footer_btn">
           <li class="sp_footer_btn_item">
@@ -265,14 +265,14 @@
           </li>
           <li class="sp_footer_btn_item">
             <a href="#header" >
-              
+
               <b-icon icon="chevron-up"></b-icon>
             </a>
           </li>
         </ul>
       </div>
-      
-      <footer class="nav nav-footer ">   
+
+      <footer class="nav nav-footer ">
 
         <div class="sp_footer sp">
           <ul>
@@ -280,12 +280,12 @@
             </li>
           </ul>
         </div>
-       
+
         <p class="copyright nomargin">©︎2022 RBS | repair-business-school.com</p>
       </footer>
 
     </div><!--//layout-default-->
-		
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
     <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
