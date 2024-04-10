@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
-$url:'https://checksv.net/webtest05/daiei';
+$url: "";
 /* color */
-$color_main:#c09c11;
-$color_sub:#e3cc00;
-$color_gold:#9a7e4e;
-$line:#06c755;
+$black: #202020;
+$gray: #f8f8f8;
+$red: #db0000;
+$yellow: #ffff00;
+$line: #06b81e;
+$orange: #ff8800;
 //media
 $media430: 430px; //SP用のブレイクポイント
 $media897: 897px; // タブレット用のブレイクポイント
@@ -13,29 +15,28 @@ $media1025: 1025px; // PC用のブレイクポイント1
 $media1280: 1280px; // PC用のブレイクポイント2
 $media1620: 1620px; // PC用のブレイクポイント2x
 
-
-@mixin media430{
-	@media screen and (min-width: ($media430)) {
-		@content;
-	}
+@mixin media430 {
+  @media screen and (min-width: ($media430)) {
+    @content;
+  }
 }
 @mixin media897 {
-	@media screen and (min-width: ($media897)) {
-		@content;
-	}
+  @media screen and (min-width: ($media897)) {
+    @content;
+  }
 }
 @mixin media1025 {
-	@media screen and (min-width: ($media1025)) {
-		@content;
-	}
+  @media screen and (min-width: ($media1025)) {
+    @content;
+  }
 }
 @mixin media1280 {
-	@media screen and (min-width: ($media1280)) {
-		@content;
-	}
+  @media screen and (min-width: ($media1280)) {
+    @content;
+  }
 }
 @mixin media1620 {
-	@media screen and (min-width: ($media1620)) {
-		@content;
-	}
+  @media screen and (min-width: ($media1620)) {
+    @content;
+  }
 }
