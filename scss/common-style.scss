@@ -169,6 +169,7 @@ h2 {
       color: #fff;
       padding: 2rem 1.5rem;
       @include media897() {
+        font-size: 3.5rem;
       }
     }
     &-box {
@@ -243,14 +244,16 @@ h2 {
 
       @include media897() {
         flex-direction: row;
-        width: 750px;
+        width: 800px;
         margin: 0 auto;
       }
       .icon {
         color: $red;
         height: 4rem;
+
         @include media897() {
           width: 15rem;
+          height: unset;
         }
         i {
           &:before {
@@ -298,6 +301,9 @@ h2 {
             color: $orange;
           }
         }
+        video {
+          width: 100%;
+        }
       }
     }
   }
@@ -344,12 +350,16 @@ h2 {
   padding: 2rem 15px;
   @include media897() {
     padding: 0 0 4rem;
-    width: 1140px;
     margin: 0 auto;
   }
   .skill {
     width: 100%;
     text-align: center;
+    @include media897() {
+    }
+    img {
+      width: 100%;
+    }
     video {
       padding: 1rem 0 3rem;
       width: 100%;
@@ -549,8 +559,9 @@ h2 {
       }
       h3 {
         color: $red;
+        font-size: 17px;
         @include media897() {
-          font-size: 29px;
+          font-size: 28px;
         }
       }
       .ya {

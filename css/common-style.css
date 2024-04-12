@@ -189,6 +189,11 @@ h2 {
   color: #fff;
   padding: 2rem 1.5rem;
 }
+@media screen and (min-width: 897px) {
+  #earn .earn h2 {
+    font-size: 3.5rem;
+  }
+}
 #earn .earn-box {
   background-color: #fff;
   padding: 2rem;
@@ -265,7 +270,7 @@ h2 {
 @media screen and (min-width: 897px) {
   #movies .movies-head {
     flex-direction: row;
-    width: 750px;
+    width: 800px;
     margin: 0 auto;
   }
 }
@@ -276,6 +281,7 @@ h2 {
 @media screen and (min-width: 897px) {
   #movies .movies-head .icon {
     width: 15rem;
+    height: unset;
   }
 }
 #movies .movies-head .icon i:before {
@@ -326,6 +332,9 @@ h2 {
 #movies .movies ul li h3 span {
   font-weight: normal;
   color: #ff8800;
+}
+#movies .movies ul li video {
+  width: 100%;
 }
 
 #course .course {
@@ -379,13 +388,15 @@ h2 {
 @media screen and (min-width: 897px) {
   #skill {
     padding: 0 0 4rem;
-    width: 1140px;
     margin: 0 auto;
   }
 }
 #skill .skill {
   width: 100%;
   text-align: center;
+}
+#skill .skill img {
+  width: 100%;
 }
 #skill .skill video {
   padding: 1rem 0 3rem;
@@ -641,10 +652,11 @@ h2 {
 }
 #contact .contact-box h3 {
   color: #db0000;
+  font-size: 17px;
 }
 @media screen and (min-width: 897px) {
   #contact .contact-box h3 {
-    font-size: 29px;
+    font-size: 28px;
   }
 }
 #contact .contact-box .ya {
