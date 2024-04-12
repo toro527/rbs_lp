@@ -106,6 +106,20 @@ a:hover {
   }
 }
 
+.right {
+  padding: 2rem 0 0;
+  text-align: right;
+}
+
+.pt50 {
+  padding-top: 3rem;
+}
+@media screen and (min-width: 897px) {
+  .pt50 {
+    padding-top: 5rem;
+  }
+}
+
 .pb20 {
   padding-bottom: 2rem;
 }
@@ -115,9 +129,14 @@ a:hover {
 }
 
 .line1 {
-  font-size: 27px;
+  font-size: 23px;
   color: #000;
   background: linear-gradient(transparent 70%, #ffff00 70%);
+}
+@media screen and (min-width: 897px) {
+  .line1 {
+    font-size: 27px;
+  }
 }
 
 .big {
@@ -127,6 +146,10 @@ a:hover {
   .big {
     font-size: 32px;
   }
+}
+
+.red {
+  color: #db0000;
 }
 
 h2 {
@@ -162,7 +185,9 @@ h2 {
   }
 }
 #earn .earn h2 {
+  font-size: 1.8rem;
   color: #fff;
+  padding: 2rem 1.5rem;
 }
 #earn .earn-box {
   background-color: #fff;
@@ -186,7 +211,7 @@ h2 {
   }
 }
 #earn .earn-box p strong {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 @media screen and (min-width: 897px) {
   #earn .earn-box p strong {
@@ -195,7 +220,7 @@ h2 {
 }
 #earn .earn-box p .red {
   color: #db0000;
-  font-size: 22px;
+  font-size: 20px;
 }
 @media screen and (min-width: 897px) {
   #earn .earn-box p .red {
@@ -204,7 +229,7 @@ h2 {
   }
 }
 #earn .earn-box .waku_gray {
-  background-color: #f8f8f8;
+  background-color: #e6e6e6;
   padding: 15px;
   font-size: 15px;
   font-weight: 600;
@@ -223,16 +248,60 @@ h2 {
 }
 
 #movies {
+  padding: 2rem 15px;
   background-color: #f3f3f3;
+}
+@media screen and (min-width: 897px) {
+  #movies {
+    padding: 0 0 4rem;
+  }
+}
+#movies .movies-head {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+}
+@media screen and (min-width: 897px) {
+  #movies .movies-head {
+    flex-direction: row;
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+#movies .movies-head .icon {
+  color: #db0000;
+  height: 4rem;
+}
+@media screen and (min-width: 897px) {
+  #movies .movies-head .icon {
+    width: 15rem;
+  }
+}
+#movies .movies-head .icon i:before {
+  font-size: 5rem;
+}
+@media screen and (min-width: 897px) {
+  #movies .movies-head .icon i:before {
+    font-size: 15rem;
+  }
+}
+#movies .movies-head h2 {
+  font-size: 18px;
+}
+@media screen and (min-width: 897px) {
+  #movies .movies-head h2 {
+    font-size: 3rem;
+  }
 }
 #movies .movies ul {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 897px) {
   #movies .movies ul {
     width: 1140px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
   }
 }
@@ -240,6 +309,7 @@ h2 {
   background-color: #fff;
   padding: 1rem;
   margin-bottom: 15px;
+  width: 100%;
 }
 @media screen and (min-width: 897px) {
   #movies .movies ul li {
@@ -248,16 +318,33 @@ h2 {
     margin-bottom: 30px;
   }
 }
+#movies .movies ul li h3 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 16px;
+}
+#movies .movies ul li h3 span {
+  font-weight: normal;
+  color: #ff8800;
+}
 
 #course .course {
-  background-image: url("https://www.reform.repair/files/pc_4_bg.png");
+  padding: 1rem 1.5rem;
+}
+@media screen and (min-width: 897px) {
+  #course .course {
+    padding: 0;
+  }
 }
 #course .course h2 {
   border-left: 5px solid #222;
-  margin-left: 1rem;
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+  text-align: left;
 }
 @media screen and (min-width: 897px) {
   #course .course h2 {
+    text-align: center;
     width: 800px;
     margin: 4rem auto;
     padding: 0;
@@ -273,6 +360,10 @@ h2 {
     margin: 0 auto;
   }
 }
+#course .course-box p {
+  font-size: 16px;
+  line-height: 2;
+}
 @media screen and (min-width: 897px) {
   #course .course-box p {
     font-size: 18px;
@@ -282,16 +373,298 @@ h2 {
   }
 }
 
+#skill {
+  padding: 2rem 15px;
+}
+@media screen and (min-width: 897px) {
+  #skill {
+    padding: 0 0 4rem;
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+#skill .skill {
+  width: 100%;
+  text-align: center;
+}
+#skill .skill video {
+  padding: 1rem 0 3rem;
+  width: 100%;
+}
+@media screen and (min-width: 897px) {
+  #skill .skill video {
+    padding: 3rem 0 5rem;
+  }
+}
+
+#message {
+  padding: 2rem 5px;
+}
+@media screen and (min-width: 897px) {
+  #message {
+    width: 1140px;
+    padding: 0 0 4rem;
+    margin: 0 auto;
+  }
+}
+#message .message {
+  background-color: #fff;
+  width: 100%;
+  border: 8px double #222;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 897px) {
+  #message .message {
+    padding: 4rem;
+  }
+}
+#message .message p,
+#message .message h3,
+#message .message h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (min-width: 897px) {
+  #message .message p,
+  #message .message h3,
+  #message .message h4 {
+    font-size: 24px;
+  }
+}
+#message .message p b,
+#message .message h3 b,
+#message .message h4 b {
+  font-size: 18px;
+}
+@media screen and (min-width: 897px) {
+  #message .message p b,
+  #message .message h3 b,
+  #message .message h4 b {
+    font-size: 27px;
+  }
+}
+#message .message-box {
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 4px double #222;
+  background-color: #f8f8f8;
+}
+@media screen and (min-width: 897px) {
+  #message .message-box {
+    padding: 2rem 4rem 4rem;
+    margin: 2rem 0;
+  }
+}
+@media screen and (min-width: 897px) {
+  #message .message-box h3 {
+    padding: 4rem 0;
+  }
+}
+#message .message-box p,
+#message .message-box h4 {
+  padding-bottom: 1rem;
+  font-size: 16px;
+}
+@media screen and (min-width: 897px) {
+  #message .message-box p,
+  #message .message-box h4 {
+    padding-bottom: 1rem;
+    font-size: 22px;
+  }
+}
+
+#cta {
+  padding: 2rem 5px 3rem;
+}
+@media screen and (min-width: 897px) {
+  #cta {
+    width: 1140px;
+    padding: 0 0 4rem;
+    margin: 0 auto;
+  }
+}
+#cta .cta {
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  border: 8px double #222;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta {
+    padding: 2rem 4rem 4rem;
+  }
+}
+#cta .cta h2 {
+  text-align: left;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta h2 {
+    text-align: center;
+  }
+}
+#cta .cta p,
+#cta .cta h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta p,
+  #cta .cta h4 {
+    font-size: 20px;
+  }
+}
+#cta .cta p b,
+#cta .cta h4 b {
+  font-size: 18px;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta p b,
+  #cta .cta h4 b {
+    font-size: 27px;
+  }
+}
+#cta .cta h3 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta h3 {
+    font-size: 9rem;
+    padding-bottom: 5rem;
+  }
+}
+#cta .cta img {
+  width: 180px;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta img {
+    width: 180px;
+  }
+}
+#cta .cta .line {
+  color: #06b81e;
+  padding: 3rem 0;
+}
+#cta .cta-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto 1rem;
+  background-color: #222;
+  padding: 5px 1rem;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta-box {
+    width: 50%;
+    padding: 1rem 2rem;
+    margin: 4rem auto 0;
+  }
+}
+#cta .cta-box img {
+  width: 5rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta-box img {
+    width: 10rem;
+    padding-right: 3rem;
+  }
+}
+#cta .cta-box p {
+  color: #fff;
+}
+#cta .cta-box p span {
+  font-size: 2rem;
+}
+@media screen and (min-width: 897px) {
+  #cta .cta-box p span {
+    font-size: 3rem;
+  }
+}
+
 #contact {
-  padding-top: 10rem;
+  background-color: #222;
   height: auto;
   width: 100%;
-  margin: -10rem auto 3rem;
+  padding: 1.5rem 10px;
 }
 @media screen and (min-width: 897px) {
   #contact {
+    padding: 2.5rem 0;
+  }
+}
+#contact .contact {
+  padding: 0rem 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 3rem;
+  border: 3px solid #ff8800;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact {
+    flex-direction: row;
     margin: 3rem auto;
-    width: 65rem;
+    width: 1140px;
+  }
+}
+#contact .contact-box {
+  padding: 1.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact-box {
+    width: 50%;
+    padding: 0rem 0rem 0 3rem;
+  }
+}
+#contact .contact-box h2 {
+  text-align: left;
+  color: #ff8800;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact-box h2 {
+    font-size: 29px;
+  }
+}
+#contact .contact-box .txt {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact-box .txt {
+    font-size: 20px;
+    padding-bottom: 3rem;
+  }
+}
+#contact .contact-box h3 {
+  color: #db0000;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact-box h3 {
+    font-size: 29px;
+  }
+}
+#contact .contact-box .ya {
+  padding-top: 1rem;
+}
+#contact .contact-box .ya .icon {
+  width: 2rem;
+  color: #db0000;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact-box .ya .icon {
+    width: 4.5rem;
+  }
+}
+#contact .contact-box .ya .icon i::before {
+  font-size: 3rem;
+}
+@media screen and (min-width: 897px) {
+  #contact .contact-box .ya .icon i::before {
+    font-size: 5rem;
   }
 }
 #contact iframe {
@@ -300,6 +673,7 @@ h2 {
 }
 @media screen and (min-width: 897px) {
   #contact iframe {
+    padding-top: 2rem;
     width: 65rem;
   }
 }

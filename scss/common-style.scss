@@ -100,6 +100,17 @@ a {
     display: block;
   }
 }
+.right {
+  padding: 2rem 0 0;
+  text-align: right;
+}
+.pt50 {
+  padding-top: 3rem;
+
+  @include media897() {
+    padding-top: 5rem;
+  }
+}
 .pb20 {
   padding-bottom: 2rem;
 }
@@ -107,9 +118,12 @@ a {
   padding-bottom: 3rem;
 }
 .line1 {
-  font-size: 27px;
+  font-size: 23px;
   color: #000;
   background: linear-gradient(transparent 70%, #ffff00 70%);
+  @include media897() {
+    font-size: 27px;
+  }
 }
 .big {
   font-size: 26px;
@@ -117,6 +131,9 @@ a {
   @include media897() {
     font-size: 32px;
   }
+}
+.red {
+  color: #db0000;
 }
 h2 {
   padding: 2rem 0;
@@ -147,7 +164,10 @@ h2 {
   }
   .earn {
     h2 {
+      font-size: 1.8rem;
+
       color: #fff;
+      padding: 2rem 1.5rem;
       @include media897() {
       }
     }
@@ -168,23 +188,27 @@ h2 {
           font-size: 2.2rem;
         }
         strong {
-          font-size: 2rem;
+          font-size: 1.7rem;
           @include media897() {
             font-size: 27px;
           }
         }
         .red {
           color: $red;
-          font-size: 22px;
+          font-size: 20px;
 
           @include media897() {
             font-size: 34px;
             line-height: 1.5;
           }
         }
+        .line1 {
+          @include media897() {
+          }
+        }
       }
       .waku_gray {
-        background-color: $gray;
+        background-color: #e6e6e6;
         padding: 15px;
         font-size: 15px;
         font-weight: 600;
@@ -203,25 +227,76 @@ h2 {
     }
   }
 }
+
 #movies {
+  padding: 2rem 15px;
   background-color: #f3f3f3;
+  @include media897() {
+    padding: 0 0 4rem;
+  }
   .movies {
+    &-head {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      align-items: center;
+
+      @include media897() {
+        flex-direction: row;
+        width: 750px;
+        margin: 0 auto;
+      }
+      .icon {
+        color: $red;
+        height: 4rem;
+        @include media897() {
+          width: 15rem;
+        }
+        i {
+          &:before {
+            font-size: 5rem;
+            @include media897() {
+              font-size: 15rem;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 18px;
+        @include media897() {
+          font-size: 3rem;
+        }
+      }
+    }
     ul {
       margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
       @include media897() {
         width: 1140px;
-        display: flex;
-        flex-wrap: wrap;
+
         justify-content: space-around;
       }
       li {
         background-color: #fff;
         padding: 1rem;
         margin-bottom: 15px;
+        width: 100%;
         @include media897() {
           padding: 15px;
           width: 32%;
           margin-bottom: 30px;
+        }
+        h3 {
+          font-weight: normal;
+          text-align: center;
+          font-size: 16px;
+          @include media897() {
+          }
+          span {
+            font-weight: normal;
+            color: $orange;
+          }
         }
       }
     }
@@ -229,11 +304,17 @@ h2 {
 }
 #course {
   .course {
-    background-image: url("https://www.reform.repair/files/pc_4_bg.png");
+    padding: 1rem 1.5rem;
+    @include media897() {
+      padding: 0;
+    }
     h2 {
       border-left: 5px solid #222;
-      margin-left: 1rem;
+      margin: 1rem 0;
+      padding: 0 0 0 1rem;
+      text-align: left;
       @include media897() {
+        text-align: center;
         width: 800px;
         margin: 4rem auto;
         padding: 0;
@@ -247,6 +328,8 @@ h2 {
         margin: 0 auto;
       }
       p {
+        font-size: 16px;
+        line-height: 2;
         @include media897() {
           font-size: 18px;
           font-weight: 500;
@@ -257,20 +340,248 @@ h2 {
     }
   }
 }
+#skill {
+  padding: 2rem 15px;
+  @include media897() {
+    padding: 0 0 4rem;
+    width: 1140px;
+    margin: 0 auto;
+  }
+  .skill {
+    width: 100%;
+    text-align: center;
+    video {
+      padding: 1rem 0 3rem;
+      width: 100%;
+      @include media897() {
+        padding: 3rem 0 5rem;
+      }
+    }
+  }
+}
+#message {
+  padding: 2rem 5px;
+  @include media897() {
+    width: 1140px;
+    padding: 0 0 4rem;
+    margin: 0 auto;
+  }
+  .message {
+    background-color: #fff;
+    width: 100%;
+    border: 8px double #222;
+    padding: 1.5rem;
+    @include media897() {
+      padding: 4rem;
+    }
+    p,
+    h3,
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      @include media897() {
+        font-size: 24px;
+      }
+      b {
+        font-size: 18px;
+        @include media897() {
+          font-size: 27px;
+        }
+      }
+    }
+    &-box {
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 4px double #222;
+      background-color: #f8f8f8;
+      @include media897() {
+        padding: 2rem 4rem 4rem;
+        margin: 2rem 0;
+      }
+      h3 {
+        @include media897() {
+          padding: 4rem 0;
+        }
+      }
+      p,
+      h4 {
+        padding-bottom: 1rem;
+        font-size: 16px;
+        @include media897() {
+          padding-bottom: 1rem;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+#cta {
+  padding: 2rem 5px 3rem;
+  @include media897() {
+    width: 1140px;
+    padding: 0 0 4rem;
+    margin: 0 auto;
+  }
+  .cta {
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    border: 8px double #222;
+    padding: 1.5rem;
+    @include media897() {
+      padding: 2rem 4rem 4rem;
+    }
+    h2 {
+      text-align: left;
+      @include media897() {
+        text-align: center;
+      }
+    }
+    p,
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      @include media897() {
+        font-size: 20px;
+      }
+      b {
+        font-size: 18px;
+        @include media897() {
+          font-size: 27px;
+        }
+      }
+    }
+    h3 {
+      font-size: 4rem;
+      padding-bottom: 2rem;
+      @include media897() {
+        font-size: 9rem;
+        padding-bottom: 5rem;
+      }
+    }
+    img {
+      width: 180px;
+
+      @include media897() {
+        width: 180px;
+      }
+    }
+    .line {
+      color: $line;
+      padding: 3rem 0;
+    }
+    &-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto 1rem;
+      background-color: #222;
+      padding: 5px 1rem;
+
+      @include media897() {
+        width: 50%;
+        padding: 1rem 2rem;
+        margin: 4rem auto 0;
+      }
+      img {
+        width: 5rem;
+        padding-right: 1rem;
+        @include media897() {
+          width: 10rem;
+          padding-right: 3rem;
+        }
+      }
+      p {
+        color: #fff;
+        span {
+          font-size: 2rem;
+          @include media897() {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
 #contact {
-  padding-top: 10rem;
+  background-color: #222;
   height: auto;
   width: 100%;
-  margin: -10rem auto 3rem;
+  padding: 1.5rem 10px;
+
   @include media897() {
-    margin: 3rem auto;
-    width: 65rem;
+    padding: 2.5rem 0;
+  }
+  .contact {
+    padding: 0rem 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 3rem;
+    border: 3px solid $orange;
+    @include media897() {
+      flex-direction: row;
+      margin: 3rem auto;
+      width: 1140px;
+    }
+    &-box {
+      padding: 1.5rem;
+      width: 100%;
+      @include media897() {
+        width: 50%;
+        padding: 0rem 0rem 0 3rem;
+      }
+      h2 {
+        text-align: left;
+        color: $orange;
+        @include media897() {
+          font-size: 29px;
+        }
+      }
+      .txt {
+        padding-bottom: 2rem;
+        font-weight: bold;
+        color: #fff;
+        @include media897() {
+          font-size: 20px;
+          padding-bottom: 3rem;
+        }
+      }
+      h3 {
+        color: $red;
+        @include media897() {
+          font-size: 29px;
+        }
+      }
+      .ya {
+        padding-top: 1rem;
+        @include media897() {
+        }
+        .icon {
+          width: 2rem;
+          color: $red;
+          @include media897() {
+            width: 4.5rem;
+          }
+          i {
+            &::before {
+              font-size: 3rem;
+              @include media897() {
+                font-size: 5rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   iframe {
     height: 90rem;
     width: 100%;
 
     @include media897() {
+      padding-top: 2rem;
+
       width: 65rem;
     }
   }
