@@ -287,30 +287,30 @@ new Vue({
   },
 });
 
-var swiper = new Swiper(".mvswiper", {
-  loop: true,
-  effect: "fade",
-  spaceBetween: 30,
-  autoplay: {
-    delay: 4000,
-  },
-});
-let offlineSwiper = new Swiper(".offlineSwiper", {
-  loop: true, // ループ
-  speed: 6000, // 少しゆっくり(デフォルトは300)
-  allowTouchMove: false, // スワイプ無効
-  autoplay: {
-    //自動再生
-    delay: 0, // 途切れなくループ
-    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-    reverseDirection: true, // 逆方向有効化
-  },
-  // スライドの表示枚数
-  slidesPerView: 1,
-  breakpoints: {
-    // スライドの表示枚数：500px以上の場合
-    800: {
-      slidesPerView: 3,
-    },
-  },
-});
+// var swiper = new Swiper(".mvswiper", {
+//   loop: true,
+//   effect: "fade",
+//   spaceBetween: 30,
+//   autoplay: {
+//     delay: 4000,
+//   },
+// });
+// let offlineSwiper = new Swiper(".offlineSwiper", {
+//   loop: true, // ループ
+//   speed: 6000, // 少しゆっくり(デフォルトは300)
+//   allowTouchMove: false, // スワイプ無効
+//   autoplay: {
+//     //自動再生
+//     delay: 0, // 途切れなくループ
+//     disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+//     reverseDirection: true, // 逆方向有効化
+//   },
+//   // スライドの表示枚数
+//   slidesPerView: 1,
+//   breakpoints: {
+//     // スライドの表示枚数：500px以上の場合
+//     800: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
