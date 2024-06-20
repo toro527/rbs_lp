@@ -1,0 +1,1589 @@
+@charset "UTF-8";
+
+@import "_variables.scss";
+/* -------------------------- */
+/* reset */
+/* -------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+figure {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* -------------------------- */
+/* all style */
+/* -------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+/*font-family: 'Noto Serif JP', serif; */
+/*font-family: "Noto Sans JP",Noto Sans JP,"游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "游ゴシック Medium", YuGothic-M, YuGothic, "游ゴシック体",
+    YuGothic, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Noto Sans JP,
+    メイリオ, Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+.mincho {
+  font-family: "Noto Serif JP", serif;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+img {
+  width: 100%;
+}
+button,
+a {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/**************/
+.contents {
+  width: 100%;
+  padding: 0 1.5rem;
+  @include media897() {
+    max-width: 1180px;
+  }
+}
+
+.sp {
+  display: block;
+  @include media897() {
+    display: none;
+  }
+}
+
+.pc {
+  display: none;
+  @include media897() {
+    display: block;
+  }
+}
+.right {
+  padding: 2rem 0 0;
+  text-align: right;
+}
+.pt50 {
+  padding-top: 3rem;
+
+  @include media897() {
+    padding-top: 5rem;
+  }
+}
+.pb20 {
+  padding-bottom: 2rem;
+}
+.pb30 {
+  padding-bottom: 3rem;
+}
+.line1 {
+  font-size: 20px;
+  color: #000;
+  background: linear-gradient(transparent 70%, #ffff00 70%);
+  @include media897() {
+    font-size: 27px;
+  }
+}
+.big {
+  font-size: 25px;
+
+  @include media897() {
+    font-size: 32px;
+  }
+}
+.red {
+  color: #db0000;
+}
+h2 {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  @include media897() {
+    padding: 4rem 0;
+    font-size: 3.2rem;
+    line-height: 1.5;
+  }
+}
+/* -------------------------- */
+/* main_visual  */
+/* -------------------------- */
+.mainvisual {
+  img {
+    @include media897() {
+      min-height: 100vh;
+    }
+  }
+}
+.sankaku {
+  position: absolute;
+  transform: rotate(-180deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #222 transparent;
+  @include media897() {
+    border-width: 0 20px 20px 20px;
+  }
+}
+.sankaku_w {
+  position: absolute;
+  transform: rotate(-180deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+
+  border-color: transparent transparent #fff transparent;
+  @include media897() {
+    border-width: 0 20px 20px 20px;
+  }
+}
+.circle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border: 3px solid #222;
+  border-radius: 50%;
+}
+.circle_s {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 3px solid #222;
+  border-radius: 50%;
+}
+#points {
+  border-top: #222 solid 1rem;
+  @include media897() {
+    border-top: #222 solid 2rem;
+  }
+  .sankaku {
+    position: absolute;
+    left: 50%;
+    @include media897() {
+    }
+  }
+  .points {
+    padding: 3rem 0 0;
+    width: 100%;
+    @include media897() {
+      padding: 7rem 0 0;
+    }
+    .eng {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 0;
+      font-size: 1.6rem;
+      width: 20rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      margin: 0 auto;
+      @include media897() {
+        width: 25rem;
+        font-size: 2rem;
+      }
+    }
+    h2 {
+      font-size: 2.2rem;
+      padding: 2rem 1.5rem;
+      @include media897() {
+        font-size: 4rem;
+      }
+    }
+    ul {
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      @include media897() {
+        width: 70%;
+        margin: 0 auto;
+        padding: 6rem 0;
+      }
+      li {
+        width: 30%;
+        background-color: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+        border: 2px solid #222;
+        padding: 3rem 0;
+        border-radius: 50%;
+        @include media897() {
+          width: 34%;
+          border: 3px solid #222;
+          display: flex;
+          align-items: center;
+          font-size: 2.6rem;
+        }
+        p {
+          position: relative;
+          margin: 1rem auto;
+          width: 78%;
+          font-weight: bold;
+          @include media897() {
+            width: 78%;
+          }
+        }
+        &:first-child {
+          width: 34%;
+
+          margin-top: 4rem;
+          @include media897() {
+            margin-top: 10rem;
+          }
+          span {
+            bottom: 12px;
+            left: 25%;
+          }
+          .circle_s {
+            bottom: -20px;
+            left: 29%;
+            @include media897() {
+              bottom: -20px;
+            }
+          }
+        }
+        &:last-child {
+          margin-top: 4rem;
+          @include media897() {
+            margin-top: 10rem;
+          }
+          span {
+            bottom: 20px;
+            right: 25%;
+          }
+          .circle_s {
+            bottom: -30px;
+            right: 29%;
+            @include media897() {
+              bottom: -10px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 32%;
+          @include media897() {
+            position: absolute;
+            left: 35%;
+          }
+          span {
+            bottom: -60px;
+            right: 47%;
+          }
+          .circle_s {
+            bottom: -50px;
+            right: 45%;
+            @include media897() {
+              bottom: -100px;
+              right: 47%;
+            }
+          }
+        }
+      }
+    }
+    figure {
+      width: 10rem;
+      margin: 7rem auto 5rem;
+      @include media897() {
+        width: 15rem;
+        margin: 0 auto 5rem;
+      }
+      img {
+      }
+    }
+    &-box {
+      width: 100%;
+      background-color: #222;
+      padding: 1.5rem 1.5rem 0;
+      @include media897() {
+        padding: 7rem 0;
+        margin: 0 auto;
+      }
+      .contents {
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 3rem 1.5rem;
+        @include media897() {
+          padding: 5rem;
+        }
+        h3 {
+          font-size: 2rem;
+          .icon {
+            padding-right: 1rem;
+            color: red;
+            i {
+              &::before {
+                font-size: 4rem;
+              }
+            }
+          }
+          @include media897() {
+            font-size: 3rem;
+            margin-left: 3rem;
+          }
+        }
+        p {
+          width: 100%;
+
+          padding: 2rem 0;
+          font-size: 1.7rem;
+          @include media897() {
+            line-height: 5rem;
+            padding: 3rem;
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+#charm {
+  border-top: #222 solid 2rem;
+  padding-bottom: 2rem;
+  @include media897() {
+    padding-bottom: 4rem;
+  }
+  .sankaku {
+    position: absolute;
+    left: 50%;
+  }
+  .charm {
+    padding: 5rem 1.5rem;
+    width: 100%;
+    @include media897() {
+      padding: 7rem 0 0;
+    }
+    .eng {
+      background-color: #222;
+      text-align: center;
+      color: #fff;
+      padding: 0;
+      font-size: 1.4rem;
+      width: 20rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      margin: 0 auto;
+      @include media897() {
+        width: 30rem;
+        font-size: 2rem;
+      }
+    }
+    h2 {
+      font-size: 2.2rem;
+      padding: 2rem 1.5rem;
+      @include media897() {
+        font-size: 4rem;
+      }
+    }
+    &-circle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      @include media897() {
+        width: 50%;
+        margin: 0 auto;
+        padding: 6rem 0;
+      }
+      li {
+        width: 32%;
+        background-color: #fff;
+        font-size: 1.7rem;
+        text-align: center;
+        border: 3px solid #222;
+        padding: 3rem 0;
+        border-radius: 50%;
+        @include media897() {
+          width: 34%;
+          display: flex;
+          align-items: center;
+          font-size: 2.6rem;
+        }
+        p {
+          position: relative;
+          margin: 1rem auto;
+          width: 80%;
+          font-weight: bold;
+          @include media897() {
+            width: 78%;
+          }
+        }
+        &:first-child {
+          width: 30%;
+          margin-top: 4rem;
+          @include media897() {
+            margin-top: 10rem;
+          }
+          span {
+            bottom: 12px;
+            left: 25%;
+          }
+          .circle_s {
+            bottom: -20px;
+            left: 25%;
+            @include media897() {
+              bottom: -20px;
+              left: 29%;
+            }
+          }
+        }
+        &:last-child {
+          width: 34%;
+          margin-top: 4rem;
+          @include media897() {
+            margin-top: 10rem;
+          }
+          span {
+            bottom: 20px;
+            right: 25%;
+          }
+          .circle_s {
+            bottom: -30px;
+            right: 29%;
+            @include media897() {
+              bottom: -10px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 34%;
+          @include media897() {
+            position: absolute;
+            left: 35%;
+          }
+          span {
+            bottom: -60px;
+            right: 47%;
+          }
+          .circle_s {
+            bottom: -30px;
+            right: 45%;
+            @include media897() {
+              bottom: -100px;
+              right: 47%;
+            }
+          }
+        }
+      }
+    }
+    figure {
+      width: 0rem;
+      margin: 10rem auto 5rem;
+      @include media897() {
+        margin: 10rem auto 5rem;
+      }
+      .icon {
+        // color: #fff;
+        i {
+          &::before {
+            font-size: 13rem;
+            @include media897() {
+              font-size: 20rem;
+            }
+          }
+        }
+      }
+    }
+    &-box {
+      width: 100%;
+      padding: 2rem 0;
+      @include media897() {
+        padding: 2rem 0 0;
+        margin: 0 auto;
+      }
+      .contents {
+        margin: 0 auto;
+
+        @include media897() {
+          width: 65%;
+        }
+        h3 {
+          font-size: 2rem;
+          .icon {
+            padding-right: 1rem;
+            color: red;
+            i {
+              &::before {
+                font-size: 4rem;
+              }
+            }
+          }
+          @include media897() {
+            font-size: 3rem;
+            margin-left: 3rem;
+          }
+        }
+        p {
+          width: 100%;
+          padding: 2rem;
+          font-size: 1.7rem;
+          @include media897() {
+            line-height: 5rem;
+            padding: 0 3rem 3rem;
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+    &-box2 {
+      width: 100%;
+      background-color: #fff;
+      padding: 2rem 0 0;
+      @include media897() {
+        padding: 7rem 0 0;
+        margin: 0 auto;
+      }
+      .contents {
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 3rem 0 0;
+        @include media897() {
+          padding: 5rem 5rem 0;
+        }
+        ul {
+          li {
+            position: relative;
+            margin-bottom: 6rem;
+            @include media897() {
+              margin-bottom: 12rem;
+            }
+            .point {
+              position: absolute;
+              left: 33%;
+              top: -2rem;
+              text-align: center;
+              width: 13rem;
+              height: 4rem;
+              background-color: #fff;
+              font-weight: bold;
+              font-size: 2.2rem;
+              @include media897() {
+                font-size: 4rem;
+                left: 40%;
+                top: -3rem;
+                width: 22rem;
+                height: 8rem;
+              }
+            }
+            p {
+              border: 10px solid;
+              width: 100%;
+              padding: 2rem;
+              font-size: 1.5rem;
+              // border-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+              border-image: linear-gradient(-20deg, #0250c5 0%, #d43f8d 100%) 1;
+              // background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+
+              @include media897() {
+                line-height: 5rem;
+                padding: 3rem;
+                font-size: 2.5rem;
+              }
+            }
+            &:last-child {
+              margin-bottom: unset;
+              @include media897() {
+                margin-bottom: 12rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#course {
+  background-color: #222;
+  position: relative;
+  border-top: #fff solid 2rem;
+  margin-top: -1rem;
+  padding-bottom: 2rem;
+  @include media897() {
+    padding-bottom: 0;
+  }
+  .sankaku_w {
+    position: absolute;
+    left: 50%;
+  }
+  .course {
+    padding: 5rem 1.5rem 0;
+    width: 100%;
+    @include media897() {
+      padding: 7rem 0;
+    }
+    .eng {
+      background-color: #fff;
+      text-align: center;
+      padding: 0;
+      font-size: 1.4rem;
+      width: 20rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      margin: 0 auto;
+      @include media897() {
+        width: 30rem;
+        font-size: 2rem;
+      }
+    }
+    h2 {
+      color: #ffff;
+      font-size: 2.2rem;
+      padding: 2rem 1.5rem;
+      @include media897() {
+        font-size: 4rem;
+      }
+    }
+    &-box {
+      padding: 3rem 0;
+      @include media897() {
+        margin: 5rem auto 0;
+        padding: unset;
+      }
+      li {
+        padding: 4rem 1.5rem;
+        margin-bottom: 5rem;
+        @include media897() {
+          padding: 6rem 5rem 5rem;
+          margin-bottom: 12rem;
+        }
+        h3 {
+          position: relative;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: black;
+          font-size: 3rem;
+          padding: 0 0 1rem 6rem;
+          color: #f9f9a6;
+          @include media897() {
+            font-size: 5rem;
+            padding: 0 0 1rem 9rem;
+          }
+          .chara {
+            position: absolute;
+            left: 0;
+            top: -1rem;
+            display: block;
+            width: 10rem;
+            height: 10rem;
+            background-repeat: no-repeat;
+            background-size: 5rem;
+            @include media897() {
+              width: 15rem;
+              height: 15rem;
+              background-size: 8rem;
+            }
+          }
+        }
+        p {
+          font-size: 1.9rem;
+          line-height: 2;
+          @include media897() {
+            font-size: 2.5rem;
+            line-height: unset;
+          }
+        }
+        &:first-child {
+          background-image: linear-gradient(
+            90deg,
+            rgb(253, 242, 217),
+            rgb(241, 251, 252)
+          );
+          h3 {
+            color: #f9f9a6;
+            .chara {
+              background-image: url(/images/common/hiyoko.svg);
+              background-size: 5rem;
+              @include media897() {
+                background-size: 7rem;
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          background-image: linear-gradient(-225deg, #d1f1f9 0%, #dad8f7 100%);
+          h3 {
+            color: #dad8f7;
+
+            .chara {
+              background-image: url(/images/common/cocco.svg);
+              background-size: 6.5rem;
+              top: -2rem;
+              left: -1rem;
+              @include media897() {
+                background-size: 10rem;
+                top: -4rem;
+                left: -1rem;
+              }
+            }
+          }
+        }
+        &:last-child {
+          background-image: linear-gradient(-225deg, #faccb7 0%, #bcb5f2 100%);
+          margin-bottom: 0;
+          h3 {
+            font-size: 2.8rem;
+            padding: 2rem 0 2rem 8rem;
+            color: #f86e58;
+            @include media897() {
+              font-size: 5rem;
+              padding: 0 0 2rem 11rem;
+            }
+            .chara {
+              background-image: url(/images/common/fenix.png);
+              background-size: 9rem;
+              left: -1rem;
+              top: -2rem;
+              @include media897() {
+                background-size: 12rem;
+                left: -2rem;
+                top: -4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// #earn {
+//   margin-top: -1rem;
+//   background-color: $black;
+//   padding-bottom: 2rem;
+//   @include media897() {
+//     padding-bottom: 4rem;
+//   }
+//   .earn {
+//     h2 {
+//       font-size: 1.8rem;
+
+//       color: #fff;
+//       padding: 2rem 1.5rem;
+//       @include media897() {
+//         font-size: 3.5rem;
+//       }
+//     }
+//     &-box {
+//       background-color: #fff;
+//       padding: 2rem;
+//       @include media897() {
+//         padding: 3rem;
+//         width: 80rem;
+//         margin: 0 auto;
+//       }
+
+//       p {
+//         font-size: 17px;
+//         font-weight: 600;
+//         line-height: 1.5;
+//         @include media897() {
+//           font-size: 2.2rem;
+//         }
+//         strong {
+//           font-size: 1.7rem;
+//           @include media897() {
+//             font-size: 27px;
+//           }
+//         }
+//         .red {
+//           color: $red;
+//           font-size: 20px;
+
+//           @include media897() {
+//             font-size: 34px;
+//             line-height: 1.5;
+//           }
+//         }
+//         .line1 {
+//           @include media897() {
+//           }
+//         }
+//       }
+//       .waku_gray {
+//         background-color: #e6e6e6;
+//         padding: 15px;
+//         font-size: 15px;
+//         font-weight: 600;
+//         line-height: 1.6rem;
+//         letter-spacing: 1.5px;
+//         margin-bottom: 15px;
+//         @include media897() {
+//           padding: 2rem;
+//           margin-bottom: 30px;
+
+//           font-size: 15px;
+//           line-height: 1.6em;
+//           letter-spacing: 1.5px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+#movies {
+  padding: 2rem 15px;
+  background-color: #f3f3f3;
+  @include media897() {
+    padding: 0 0 4rem;
+  }
+  .movies {
+    &-head {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      align-items: center;
+
+      @include media897() {
+        flex-direction: row;
+        width: 800px;
+        margin: 0 auto;
+      }
+      .icon {
+        color: $red;
+        height: 4rem;
+
+        @include media897() {
+          width: 15rem;
+          height: unset;
+        }
+        i {
+          &:before {
+            font-size: 5rem;
+            @include media897() {
+              font-size: 15rem;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 18px;
+        @include media897() {
+          font-size: 3rem;
+        }
+      }
+    }
+    ul {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      @include media897() {
+        width: 1140px;
+
+        justify-content: space-around;
+      }
+      li {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 15px;
+        width: 100%;
+        @include media897() {
+          padding: 15px;
+          width: 45%;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-weight: normal;
+          text-align: center;
+          font-size: 16px;
+          @include media897() {
+          }
+          span {
+            font-weight: normal;
+            color: $orange;
+          }
+        }
+        video {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#needs {
+  background-color: #fff;
+  position: relative;
+  border-top: #222 solid 2rem;
+  margin-top: -1rem;
+  @include media897() {
+  }
+  .sankaku {
+    position: absolute;
+    left: 50%;
+  }
+  .needs {
+    padding: 4rem 1.5rem 0;
+    width: 100%;
+    @include media897() {
+      padding: 7rem 0 0;
+    }
+    .eng {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 0;
+      font-size: 1.4rem;
+      width: 20rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      margin: 0 auto;
+      @include media897() {
+        width: 30rem;
+        font-size: 2rem;
+      }
+    }
+    h2 {
+      font-size: 2.2rem;
+      padding: 2rem 1.5rem;
+      @include media897() {
+        font-size: 4rem;
+      }
+    }
+    &-box {
+      margin: 3rem auto;
+      @include media897() {
+        margin: 5rem auto;
+      }
+      li {
+        margin-bottom: 5rem;
+        @include media897() {
+          display: flex;
+          justify-content: space-between;
+          padding: 3rem;
+        }
+        figure {
+          padding: 2rem 0 2rem;
+          width: 100%;
+          @include media897() {
+            width: 45%;
+            padding: unset;
+          }
+        }
+        p {
+          font-size: 2rem;
+          @include media897() {
+            width: 50%;
+            font-size: 2.5rem;
+          }
+        }
+        &:first-child {
+          align-items: center;
+          figure {
+            @include media897() {
+              width: 60%;
+              padding-left: 4rem;
+            }
+          }
+          p {
+            @include media897() {
+              width: 40%;
+            }
+          }
+        }
+        &:nth-child(2) {
+          figure {
+            width: 0;
+          }
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// #course {
+//   .course {
+//     padding: 1rem 1.5rem;
+//     @include media897() {
+//       padding: 0;
+//     }
+//     h2 {
+//       border-left: 5px solid #222;
+//       margin: 1rem 0;
+//       padding: 0 0 0 1rem;
+//       text-align: left;
+//       @include media897() {
+//         text-align: center;
+//         width: 800px;
+//         margin: 4rem auto;
+//         padding: 0;
+//       }
+//     }
+//     &-box {
+//       padding: 2rem 2re 5rem;
+//       @include media897() {
+//         padding: 0 3rem 10rem;
+//         width: 90rem;
+//         margin: 0 auto;
+//       }
+//       p {
+//         font-size: 16px;
+//         line-height: 2;
+//         @include media897() {
+//           font-size: 18px;
+//           font-weight: 500;
+//           line-height: 2em;
+//           letter-spacing: 1.5px;
+//         }
+//       }
+//     }
+//   }
+// }
+// #skill {
+//   padding: 2rem 15px;
+//   @include media897() {
+//     padding: 0 0 4rem;
+//     margin: 0 auto;
+//   }
+//   .skill {
+//     width: 100%;
+//     text-align: center;
+//     @include media897() {
+//     }
+//     img {
+//       width: 100%;
+//     }
+//     video {
+//       padding: 1rem 0 3rem;
+//       width: 100%;
+//       @include media897() {
+//         padding: 3rem 0 5rem;
+//       }
+//     }
+//   }
+// }
+#message {
+  background-color: #222;
+  position: relative;
+  border-top: #fff solid 2rem;
+  margin-top: -1rem;
+  padding-bottom: 2rem;
+  @include media897() {
+    padding-bottom: 5rem;
+  }
+  .sankaku_w {
+    position: absolute;
+    left: 50%;
+  }
+  .message {
+    background-color: #222;
+    padding: 4rem 1.5rem 0;
+    width: 100%;
+    @include media897() {
+      padding: 7rem 0 0;
+    }
+    .eng {
+      background-color: #fff;
+      text-align: center;
+      padding: 0;
+      font-size: 1.4rem;
+      width: 20rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      margin: 0 auto;
+      @include media897() {
+        width: 30rem;
+        font-size: 2rem;
+      }
+    }
+    h2 {
+      color: #fff;
+      font-size: 2.2rem;
+      padding: 2rem 1.5rem;
+      @include media897() {
+        font-size: 4rem;
+      }
+    }
+    p,
+    h3,
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      @include media897() {
+        font-size: 24px;
+      }
+      b {
+        font-size: 18px;
+        @include media897() {
+          font-size: 27px;
+        }
+      }
+    }
+    &-box {
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 4px double #222;
+      background-color: #f8f8f8;
+      @include media897() {
+        padding: 2rem 4rem 4rem;
+        margin: 2rem auto;
+      }
+      h3 {
+        @include media897() {
+          padding: 4rem 0;
+        }
+      }
+      p,
+      h4 {
+        padding-bottom: 1rem;
+        font-size: 16px;
+        @include media897() {
+          padding-bottom: 1rem;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+#cta {
+  padding: 2rem 5px 3rem;
+  @include media897() {
+    width: 1140px;
+    padding: 0 0 4rem;
+    margin: 10rem auto;
+  }
+  .cta {
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    border: 8px double #222;
+    padding: 1.5rem;
+    @include media897() {
+      padding: 2rem 4rem 4rem;
+    }
+    h2 {
+      text-align: left;
+      @include media897() {
+        text-align: center;
+      }
+    }
+    p,
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      @include media897() {
+        font-size: 20px;
+      }
+      b {
+        font-size: 18px;
+        @include media897() {
+          font-size: 27px;
+        }
+      }
+    }
+    h3 {
+      font-size: 4rem;
+      padding-bottom: 2rem;
+      @include media897() {
+        font-size: 9rem;
+        padding-bottom: 5rem;
+      }
+    }
+    img {
+      width: 180px;
+
+      @include media897() {
+        width: 180px;
+      }
+    }
+    .line {
+      color: $line;
+      padding: 3rem 0;
+    }
+    &-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto 1rem;
+      background-color: #222;
+      padding: 5px 1rem;
+
+      @include media897() {
+        width: 50%;
+        padding: 1rem 2rem;
+        margin: 4rem auto 0;
+      }
+      img {
+        width: 5rem;
+        padding-right: 1rem;
+        @include media897() {
+          width: 10rem;
+          padding-right: 3rem;
+        }
+      }
+      p {
+        color: #fff;
+        span {
+          font-size: 2rem;
+          @include media897() {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+#contact {
+  background-color: #222;
+  height: auto;
+  width: 100%;
+  padding: 1.5rem 10px;
+
+  @include media897() {
+    padding: 2.5rem 0;
+  }
+  .contact {
+    padding: 0rem 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 3rem;
+    border: 3px solid $orange;
+    @include media897() {
+      flex-direction: row;
+      margin: 3rem auto;
+      width: 1140px;
+    }
+    &-box {
+      padding: 1.5rem;
+      width: 100%;
+      @include media897() {
+        width: 50%;
+        padding: 0rem 0rem 0 3rem;
+      }
+      h2 {
+        text-align: left;
+        color: $orange;
+        @include media897() {
+          font-size: 29px;
+        }
+      }
+      .txt {
+        padding-bottom: 2rem;
+        font-weight: bold;
+        color: #fff;
+        @include media897() {
+          font-size: 20px;
+          padding-bottom: 3rem;
+        }
+      }
+      h3 {
+        color: $red;
+        font-size: 17px;
+        @include media897() {
+          font-size: 28px;
+        }
+      }
+      .ya {
+        padding-top: 1rem;
+        @include media897() {
+        }
+        .icon {
+          width: 2rem;
+          color: $red;
+          @include media897() {
+            width: 4.5rem;
+          }
+          i {
+            &::before {
+              font-size: 3rem;
+              @include media897() {
+                font-size: 5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  iframe {
+    height: 90rem;
+    width: 100%;
+
+    @include media897() {
+      padding-top: 2rem;
+
+      width: 65rem;
+    }
+  }
+}
+/**
+/*footer*/
+/*sp footer*/
+#sp_footer {
+  position: fixed;
+  bottom: 1.5rem;
+  width: 100%;
+  z-index: 110;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.sp_footer_btn {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  &_item {
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #222;
+    color: #fff;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.5rem;
+      color: #fff;
+    }
+
+    &:first-child {
+      visibility: hidden;
+      a {
+        img {
+          height: 2.5rem;
+          width: auto;
+        }
+      }
+    }
+    &:nth-child(2) {
+      background-color: #000;
+      a {
+        .icon {
+          i {
+            &:before {
+              font-size: 3.5rem;
+            }
+          }
+        }
+        color: #fff;
+      }
+    }
+  }
+}
+
+.nav-footer {
+  @include media897() {
+  }
+  .sp_footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ccc;
+    z-index: 100;
+    .curpon {
+      width: 85%;
+      position: absolute;
+      bottom: 4.5rem;
+      background-image: url("..images/sakura.jpg");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      .icon {
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        background-color: #fff;
+        i {
+          &:before {
+            font-size: 4rem;
+          }
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        padding: 1rem;
+        span {
+          font-weight: bold;
+          color: red;
+        }
+        b {
+          font-size: 2rem;
+        }
+        .line {
+          color: #028a3b;
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          padding: 1rem 0;
+          color: #222;
+          display: flex;
+          gap: 0 2rem;
+          align-items: center;
+          justify-content: center;
+          .icon {
+            width: 3rem;
+            height: 3rem;
+            i {
+              &:before {
+                font-size: 3rem;
+              }
+            }
+          }
+          span {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    position: relative;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    @include media897() {
+    }
+  }
+}
+
+/*********************/
+//trancrate
+/*********************/
+.v-enter {
+  opacity: 0;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.menu-enter-active {
+  transition: all 0.56s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.menu-leave-active {
+  transition: all 0.4s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.menu-enter,
+.menu-leave-to {
+  transform: translateX(100%);
+}
+
+.menu-enter-to,
+.menu-leave {
+  transform: translateX(0);
+}
+//縦方向（y）
+.fadey-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.fadey-enter-active {
+  //transition: all 3s ease;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+.fadey-leave-active {
+  transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fadey-leave-to {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+//横方向（r）
+.fader-enter {
+  transform: translateX(30px);
+  opacity: 0;
+}
+.fader-enter-active {
+  //transition: all 3s ease;
+  transition: opacity 1s ease-in, transform 2s ease-in;
+}
+.fader-leave-active {
+  transition: all 2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fader-leave-to {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+//横方向（l）
+.fadel-enter {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+.fadel-enter-active {
+  //transition: all 3s ease;
+  transition: opacity 1s ease-in, transform 2s ease-in;
+}
+.fadel-leave-active {
+  transition: all 2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fadel-leave-to {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.fade-enter {
+  transform: translateX(5px);
+  opacity: 0;
+}
+.fade-enter-active {
+  //transition: all 3s ease;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+.fade-leave-active {
+  transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(0.97);
+}
