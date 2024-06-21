@@ -854,7 +854,7 @@ h2 {
   color: #f9f9a6;
 }
 #course .course-box li:first-child h3 .chara {
-  background-image: url(/images/common/hiyoko.svg);
+  background-image: url(images/common/hiyoko.svg);
   background-size: 5rem;
 }
 @media screen and (min-width: 897px) {
@@ -869,7 +869,7 @@ h2 {
   color: #dad8f7;
 }
 #course .course-box li:nth-child(2) h3 .chara {
-  background-image: url(/images/common/cocco.svg);
+  background-image: url(images/common/cocco.svg);
   background-size: 6.5rem;
   top: -2rem;
   left: -1rem;
@@ -897,7 +897,7 @@ h2 {
   }
 }
 #course .course-box li:last-child h3 .chara {
-  background-image: url(/images/common/fenix.png);
+  background-image: url(images/common/fenix.png);
   background-size: 9rem;
   left: -1rem;
   top: -2rem;
