@@ -196,6 +196,7 @@ h2 {
   border-radius: 50%;
 }
 #points {
+  margin-top: -1rem;
   border-top: #222 solid 1rem;
   @include media897() {
     border-top: #222 solid 2rem;

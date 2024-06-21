@@ -223,6 +223,7 @@ h2 {
 }
 
 #points {
+  margin-top: -1rem;
   border-top: #222 solid 1rem;
 }
 @media screen and (min-width: 897px) {
