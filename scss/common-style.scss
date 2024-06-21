@@ -739,7 +739,7 @@ h2 {
           h3 {
             color: #f9f9a6;
             .chara {
-              background-image: url("/images/common/hiyoko.svg");
+              background-image: url("images/common/hiyoko.svg");
               background-size: 5rem;
               @include media897() {
                 background-size: 7rem;

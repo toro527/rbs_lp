@@ -854,7 +854,7 @@ h2 {
   color: #f9f9a6;
 }
 #course .course-box li:first-child h3 .chara {
-  background-image: url("/images/common/hiyoko.svg");
+  background-image: url("images/common/hiyoko.svg");
   background-size: 5rem;
 }
 @media screen and (min-width: 897px) {
