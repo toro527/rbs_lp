@@ -582,7 +582,7 @@ h2 {
 @media screen and (min-width: 897px) {
   #charm .charm-circle li:nth-child(2) {
     position: absolute;
-    left: 35%;
+    left: 33%;
   }
 }
 #charm .charm-circle li:nth-child(2) span {
