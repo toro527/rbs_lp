@@ -1002,7 +1002,12 @@ h2 {
 }
 #movies .movies ul li iframe {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
+}
+@media screen and (min-width: 897px) {
+  #movies .movies ul li iframe {
+    height: 30rem;
+  }
 }
 
 #needs {

@@ -954,7 +954,10 @@ h2 {
         // }
         iframe {
           width: 100%;
-          height: 30rem;
+          height: 25rem;
+          @include media897() {
+            height: 30rem;
+          }
         }
       }
     }
