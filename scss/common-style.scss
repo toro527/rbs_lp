@@ -949,8 +949,12 @@ h2 {
             color: $orange;
           }
         }
-        video {
+        // video {
+        //   width: 100%;
+        // }
+        iframe {
           width: 100%;
+          height: 30rem;
         }
       }
     }
